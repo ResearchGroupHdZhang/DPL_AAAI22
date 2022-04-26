@@ -1,0 +1,2050 @@
+----------------- parameters ----------------
+-i = ./simulated_knowledge_CR.mln
+-cw = 
+-ow = 
+-m = 0
+-a = 0
+-p = 0
+-ms = 0
+-simtp = 0
+-seed = -1
+-lazy = 0
+-lazyNoApprox = 0
+-memLimit = -1
+-mwsMaxSteps = 1000000
+-tries = 1
+-targetWt = 0
+-hard = 0
+-heuristic = 2
+-tabuLength = 10
+-lazyLowState = 0
+-burnMinSteps = 100
+-burnMaxSteps = 100
+-minSteps = -1
+-maxSteps = 1000
+-maxSeconds = -1
+-subInterval = 2
+-numRuns = 3
+-numSwap = 10
+-numSolutions = 10
+-saRatio = 50
+-saTemperature = 80
+-lateSa = 1
+-numChains = 10
+-delta = 0.05
+-epsilonError = 0.01
+-fracConverged = 0.95
+-walksatType = 1
+-samplesPerTest = 100
+-periodic = 0
+-infer = 
+-d = 1
+-g = 0
+-o = simulated_out_conditional.mln
+-t = simulated_train_2000.db
+-l = 
+-ne = Food,Pricerange
+-noAddUnitClauses = 0
+-multipleDatabases = 0
+-withEM = 0
+-dNumIter = 30
+-dMaxSec = 0
+-dMaxMin = 0
+-dMaxHour = 0
+-dLearningRate = 0.001
+-dMomentum = 0
+-dNoPW = 0
+-dVP = 0
+-dNewton = 0
+-dCG = 0
+-cgLambda = 100
+-cgMaxLambda = 1.79769e+308
+-cgMinLLChange = 1e-05
+-cgNoPrecond = 0
+-queryEvidence = 0
+-dInitWithLogOdds = 0
+-dMwsMaxSubsequentSteps = -1
+-gMaxIter = 10000
+-gConvThresh = 1e-05
+-gNoEqualPredWt = 0
+-noPrior = 0
+-priorMean = 0
+-priorStdDev = -1
+-lvg = 0
+-ic = 
+----------------- end of parameters ----------------
+priorStdDev set to (discriminative learning's) default of 2
+Parsing MLN and creating domains...
+Adding clauses to MLN...
+converting to CNF:
+formula 0: Food(p,+k)
+CNF conversion took 0 secs
+formula 1: Pricerange(p,+pr)
+CNF conversion took 0 secs
+formula 2: Food(p,+k) => Pricerange(p,+pr)
+CNF conversion took 0 secs
+Parsing MLN and creating domains took 0.6 secs
+idx 0: 0 Food(a1,Chinese)
+idx 0: 0 Food(a1,European)
+idx 0: 0 Food(a1,Italian)
+idx 0: 0 Food(a1,British)
+idx 0: 0 Food(a1,Indian)
+idx 0: 0 Food(a1,FoodDontcare)
+idx 0: 0 Pricerange(a1,Cheap)
+idx 0: 0 Pricerange(a1,Moderate)
+idx 0: 0 Pricerange(a1,Expensive)
+idx 0: 0 Pricerange(a1,PriceDontcare)
+idx 0: 0 !Food(a1,Chinese) v Pricerange(a1,Cheap)
+idx 0: 0 !Food(a1,European) v Pricerange(a1,Cheap)
+idx 0: 0 !Food(a1,Italian) v Pricerange(a1,Cheap)
+idx 0: 0 !Food(a1,British) v Pricerange(a1,Cheap)
+idx 0: 0 !Food(a1,Indian) v Pricerange(a1,Cheap)
+idx 0: 0 !Food(a1,FoodDontcare) v Pricerange(a1,Cheap)
+idx 0: 0 !Food(a1,Chinese) v Pricerange(a1,Moderate)
+idx 0: 0 !Food(a1,European) v Pricerange(a1,Moderate)
+idx 0: 0 !Food(a1,Italian) v Pricerange(a1,Moderate)
+idx 0: 0 !Food(a1,British) v Pricerange(a1,Moderate)
+idx 0: 0 !Food(a1,Indian) v Pricerange(a1,Moderate)
+idx 0: 0 !Food(a1,FoodDontcare) v Pricerange(a1,Moderate)
+idx 0: 0 !Food(a1,Chinese) v Pricerange(a1,Expensive)
+idx 0: 0 !Food(a1,European) v Pricerange(a1,Expensive)
+idx 0: 0 !Food(a1,Italian) v Pricerange(a1,Expensive)
+idx 0: 0 !Food(a1,British) v Pricerange(a1,Expensive)
+idx 0: 0 !Food(a1,Indian) v Pricerange(a1,Expensive)
+idx 0: 0 !Food(a1,FoodDontcare) v Pricerange(a1,Expensive)
+idx 0: 0 !Food(a1,Chinese) v Pricerange(a1,PriceDontcare)
+idx 0: 0 !Food(a1,European) v Pricerange(a1,PriceDontcare)
+idx 0: 0 !Food(a1,Italian) v Pricerange(a1,PriceDontcare)
+idx 0: 0 !Food(a1,British) v Pricerange(a1,PriceDontcare)
+idx 0: 0 !Food(a1,Indian) v Pricerange(a1,PriceDontcare)
+idx 0: 0 !Food(a1,FoodDontcare) v Pricerange(a1,PriceDontcare)
+idx 0: 0 User(a1)
+idx 0: 0 Food(a1,a2)
+idx 0: 0 Pricerange(a1,a2)
+Setting number of MCMC steps to 100
+
+constructing state for domain 0...
+Set hard weight to 90010
+creating mrf...
+number of grounded predicates = 20000
+number of grounded clauses = 68000
+Time taken to construct MRF = 8.01 secs
+[VS] 8.29 secs
+>>> DONE: Initial num. of clauses: 68000
+
+done constructing variable states
+
+
+Constructing discriminative learner...
+
+Initializing weights ...
+List of CNF Clauses : 
+0:1 Food(-1,Chinese)
+1:1 Food(-1,European)
+2:1 Food(-1,Italian)
+3:1 Food(-1,British)
+4:1 Food(-1,Indian)
+5:1 Food(-1,FoodDontcare)
+6:1 Pricerange(-1,Cheap)
+7:1 Pricerange(-1,Moderate)
+8:1 Pricerange(-1,Expensive)
+9:1 Pricerange(-1,PriceDontcare)
+10:1 !Food(-1,Chinese) v Pricerange(-1,Cheap)
+11:1 !Food(-1,European) v Pricerange(-1,Cheap)
+12:1 !Food(-1,Italian) v Pricerange(-1,Cheap)
+13:1 !Food(-1,British) v Pricerange(-1,Cheap)
+14:1 !Food(-1,Indian) v Pricerange(-1,Cheap)
+15:1 !Food(-1,FoodDontcare) v Pricerange(-1,Cheap)
+16:1 !Food(-1,Chinese) v Pricerange(-1,Moderate)
+17:1 !Food(-1,European) v Pricerange(-1,Moderate)
+18:1 !Food(-1,Italian) v Pricerange(-1,Moderate)
+19:1 !Food(-1,British) v Pricerange(-1,Moderate)
+20:1 !Food(-1,Indian) v Pricerange(-1,Moderate)
+21:1 !Food(-1,FoodDontcare) v Pricerange(-1,Moderate)
+22:1 !Food(-1,Chinese) v Pricerange(-1,Expensive)
+23:1 !Food(-1,European) v Pricerange(-1,Expensive)
+24:1 !Food(-1,Italian) v Pricerange(-1,Expensive)
+25:1 !Food(-1,British) v Pricerange(-1,Expensive)
+26:1 !Food(-1,Indian) v Pricerange(-1,Expensive)
+27:1 !Food(-1,FoodDontcare) v Pricerange(-1,Expensive)
+28:1 !Food(-1,Chinese) v Pricerange(-1,PriceDontcare)
+29:1 !Food(-1,European) v Pricerange(-1,PriceDontcare)
+30:1 !Food(-1,Italian) v Pricerange(-1,PriceDontcare)
+31:1 !Food(-1,British) v Pricerange(-1,PriceDontcare)
+32:1 !Food(-1,Indian) v Pricerange(-1,PriceDontcare)
+33:1 !Food(-1,FoodDontcare) v Pricerange(-1,PriceDontcare)
+35:1 Food(-1,-2)
+36:1 Pricerange(-1,-2)
+Initializing MC-SAT with MaxWalksat on hard clauses...
+learning (discriminative) weights .. 
+
+Iteration 1 : 
+
+Elapsed time: 0s
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 39.47 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 41.08 secs
+Time taken for SampleSat = 2 mins, 37.12 secs
+Done with inference
+Getting gradient...
+37
+33364 33223 33466 33473 33137 33337 49892 50027 50295 49786 175019 174998 174945 174919 175086 174925 174965 175113 174947 174857 175105 175040 174962 175132 174832 174913 175235 175221 174962 175088 174878 174892 175163 174803 0 200000 200000 
+Maximum estimated improvement: 1256.13
+Weights:	New		Average
+0:		0.0816778		0.0816778
+1:		0.0625777		0.0625777
+2:		0.0123781		0.0123781
+3:		0.0563476		0.0563476
+4:		0.0369529		0.0369529
+5:		-0.248972		-0.248972
+6:		-0.351456		-0.351456
+7:		0.228626		0.228626
+8:		0.58809		0.58809
+9:		-0.370522		-0.370522
+10:		-0.207173		-0.207173
+11:		-0.185261		-0.185261
+12:		-0.116179		-0.116179
+13:		-0.202625		-0.202625
+14:		-0.0804585		-0.0804585
+15:		0.168435		0.168435
+16:		0.323616		0.323616
+17:		-0.120849		-0.120849
+18:		-0.132308		-0.132308
+19:		-0.175612		-0.175612
+20:		0.254358		0.254358
+21:		0.215028		0.215028
+22:		-0.191988		-0.191988
+23:		0.30957		0.30957
+24:		0.404749		0.404749
+25:		0.448179		0.448179
+26:		-0.118899		-0.118899
+27:		0.383864		0.383864
+28:		-0.23532		-0.23532
+29:		-0.208426		-0.208426
+30:		-0.19777		-0.19777
+31:		-0.22469		-0.22469
+32:		-0.217764		-0.217764
+33:		0.132938		0.132938
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 2 : 
+
+Elapsed time: 161.1s (2m 41s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 27.83 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 29.36 secs
+Time taken for SampleSat = 2 mins, 25.21 secs
+Done with inference
+Getting gradient...
+37
+40445 38727 34116 40063 33552 13097 24178 57382 96228 22212 164631 165744 169837 164146 171037 188783 176946 169943 172805 167632 179680 190376 172796 182703 185579 184053 178157 192940 164292 165429 169431 163980 170470 188610 0 200000 200000 
+Pred*dist = -732.754
+Real*dist = -261.023
+Lambda = 100
+Maximum estimated improvement: 248.336
+Weights:	New		Average
+0:		0.0478267		0.0647523
+1:		0.0247953		0.0436865
+2:		0.0119767		0.0121774
+3:		0.0233558		0.0398517
+4:		0.0644172		0.0506851
+5:		-0.0491142		-0.149043
+6:		-0.396005		-0.373731
+7:		0.316728		0.272677
+8:		0.612347		0.600219
+9:		-0.61158		-0.491051
+10:		-0.198756		-0.202964
+11:		-0.165958		-0.17561
+12:		-0.11174		-0.11396
+13:		-0.193513		-0.198069
+14:		-0.0756079		-0.0780332
+15:		-0.088346		0.0400444
+16:		0.597428		0.460522
+17:		-0.102302		-0.111576
+18:		-0.188863		-0.160585
+19:		-0.212593		-0.194102
+20:		0.430014		0.342186
+21:		-0.0199176		0.0975552
+22:		-0.364925		-0.278456
+23:		0.398122		0.353846
+24:		0.54839		0.476569
+25:		0.757935		0.603057
+26:		-0.31749		-0.218195
+27:		0.424094		0.403979
+28:		-0.238345		-0.236832
+29:		-0.189428		-0.198927
+30:		-0.230393		-0.214081
+31:		-0.219481		-0.222086
+32:		-0.28262		-0.250192
+33:		-0.16332		-0.0151912
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 3 : 
+
+Elapsed time: 310.49s (5m 10s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 10.49 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 11.98 secs
+Time taken for SampleSat = 2 mins, 7.86 secs
+Done with inference
+Getting gradient...
+37
+37964 32278 32894 34845 36158 25861 21187 65207 98186 15420 166041 171043 170504 167986 168633 176980 183685 174981 173436 170603 182219 180283 171195 186702 187937 189546 173810 188996 165187 170440 169441 167330 166864 176158 0 200000 200000 
+Pred*dist = -155.872
+Real*dist = -39.976
+Lambda = 100
+Maximum estimated improvement: 119.886
+Weights:	New		Average
+0:		0.0486179		0.0593741
+1:		0.0648544		0.0507425
+2:		0.0324217		0.0189255
+3:		0.0471587		0.0422874
+4:		0.0559166		0.0524289
+5:		-0.144016		-0.147367
+6:		-0.419859		-0.389107
+7:		0.347268		0.297541
+8:		0.642076		0.614171
+9:		-0.794231		-0.592111
+10:		-0.213404		-0.206444
+11:		-0.210164		-0.187128
+12:		-0.120578		-0.116166
+13:		-0.233227		-0.209788
+14:		-0.0371167		-0.0643944
+15:		0.00814943		0.0294128
+16:		0.830787		0.583944
+17:		-0.164579		-0.129243
+18:		-0.270271		-0.197147
+19:		-0.303504		-0.230569
+20:		0.595282		0.426551
+21:		0.0482454		0.0811186
+22:		-0.463498		-0.340137
+23:		0.425191		0.377628
+24:		0.692594		0.548577
+25:		1.02089		0.742336
+26:		-0.43197		-0.289453
+27:		0.622508		0.476822
+28:		-0.25796		-0.243875
+29:		-0.241727		-0.213194
+30:		-0.272609		-0.233591
+31:		-0.259052		-0.234408
+32:		-0.292436		-0.264273
+33:		-0.0949878		-0.0417901
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 4 : 
+
+Elapsed time: 442.49s (7m 22s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 12.95 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 14.09 secs
+Time taken for SampleSat = 2 mins, 10 secs
+Done with inference
+Getting gradient...
+37
+38515 36718 34758 38044 34781 17184 18639 67581 102553 11227 165062 166857 168297 164358 169536 184529 186563 171414 170960 166778 185344 186522 169090 185892 189470 191188 173312 193601 163740 165683 166999 163544 167465 183796 0 200000 200000 
+Pred*dist = -76.5087
+Real*dist = -34.5743
+Lambda = 100
+Maximum estimated improvement: 32.0302
+Weights:	New		Average
+0:		0.0447958		0.0557295
+1:		0.0587821		0.0527524
+2:		0.0253225		0.0205248
+3:		0.0338032		0.0401663
+4:		0.062275		0.0548904
+5:		-0.096555		-0.134664
+6:		-0.374104		-0.385356
+7:		0.350508		0.310782
+8:		0.638111		0.620156
+9:		-0.849264		-0.656399
+10:		-0.214909		-0.20856
+11:		-0.210537		-0.19298
+12:		-0.0969071		-0.111351
+13:		-0.22979		-0.214789
+14:		-0.0124464		-0.0514074
+15:		-0.0441753		0.0110157
+16:		0.964021		0.678963
+17:		-0.174874		-0.140651
+18:		-0.298994		-0.222609
+19:		-0.333906		-0.256404
+20:		0.655929		0.483896
+21:		-0.0178849		0.0563677
+22:		-0.5179		-0.384578
+23:		0.468199		0.400271
+24:		0.768349		0.60352
+25:		1.23153		0.864635
+26:		-0.500651		-0.342253
+27:		0.642484		0.518237
+28:		-0.256565		-0.247048
+29:		-0.233643		-0.218306
+30:		-0.271812		-0.243146
+31:		-0.251168		-0.238598
+32:		-0.303913		-0.274183
+33:		-0.144135		-0.0673764
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 5 : 
+
+Elapsed time: 576.61s (9m 36s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 9.56 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 10.94 secs
+Time taken for SampleSat = 2 mins, 6.75 secs
+Done with inference
+Getting gradient...
+37
+38340 35383 33604 37528 34838 20307 18398 68326 103436 9840 164858 168330 169525 164477 169575 181633 188479 172253 171545 166035 186223 183791 167985 186539 190149 193242 172616 192905 163658 166729 167969 163662 167072 180750 0 200000 200000 
+Pred*dist = -21.1156
+Real*dist = -15.2556
+Lambda = 100
+Maximum estimated improvement: 22.5274
+Weights:	New		Average
+0:		0.0418389		0.0529514
+1:		0.0714697		0.0564959
+2:		0.0384772		0.0241152
+3:		0.0250934		0.0371517
+4:		0.074516		0.0588155
+5:		-0.130551		-0.133842
+6:		-0.29385		-0.367055
+7:		0.342229		0.317072
+8:		0.615509		0.619227
+9:		-0.838706		-0.692861
+10:		-0.211066		-0.209061
+11:		-0.240153		-0.202415
+12:		-0.0848665		-0.106054
+13:		-0.225844		-0.217
+14:		0.0261554		-0.0358948
+15:		-0.00983741		0.00684512
+16:		1.07522		0.758215
+17:		-0.207838		-0.154088
+18:		-0.367506		-0.251588
+19:		-0.353023		-0.275727
+20:		0.699979		0.527112
+21:		0.0135917		0.0478125
+22:		-0.586934		-0.425049
+23:		0.506299		0.421476
+24:		0.85636		0.654088
+25:		1.36209		0.964127
+26:		-0.639309		-0.401664
+27:		0.696703		0.55393
+28:		-0.249853		-0.247609
+29:		-0.236991		-0.222043
+30:		-0.288427		-0.252202
+31:		-0.241616		-0.239201
+32:		-0.314771		-0.282301
+33:		-0.114189		-0.0767388
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 6 : 
+
+Elapsed time: 707.57s (11m 47s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 10.26 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 11.64 secs
+Time taken for SampleSat = 2 mins, 7.58 secs
+Done with inference
+Getting gradient...
+37
+38479 36327 34339 35148 37885 17822 19918 69553 100670 9859 164961 167446 168996 166809 167711 183995 189142 171131 170150 167889 185577 185664 167077 186586 190610 193920 168730 193747 163383 165856 167227 165938 164327 183128 0 200000 200000 
+Pred*dist = -15.6954
+Real*dist = -7.58125
+Lambda = 100
+Maximum estimated improvement: 16.2715
+Weights:	New		Average
+0:		0.0373171		0.0503457
+1:		0.071311		0.0589651
+2:		0.0387983		0.0265624
+3:		0.0469991		0.038793
+4:		0.0462613		0.0567232
+5:		-0.107142		-0.129392
+6:		-0.25947		-0.349124
+7:		0.324433		0.318299
+8:		0.617783		0.618986
+9:		-0.832206		-0.716085
+10:		-0.209188		-0.209083
+11:		-0.255733		-0.211301
+12:		-0.0656599		-0.0993218
+13:		-0.257		-0.223667
+14:		0.0917115		-0.0146271
+15:		-0.0411384		-0.00115214
+16:		1.17499		0.827678
+17:		-0.221139		-0.165264
+18:		-0.412629		-0.278428
+19:		-0.400817		-0.296576
+20:		0.769705		0.567544
+21:		-0.0156143		0.0372414
+22:		-0.631118		-0.459394
+23:		0.545345		0.442121
+24:		0.922824		0.698878
+25:		1.4975		1.05302
+26:		-0.686528		-0.449141
+27:		0.716601		0.581042
+28:		-0.240681		-0.246454
+29:		-0.227523		-0.222956
+30:		-0.294087		-0.259183
+31:		-0.260656		-0.242777
+32:		-0.286021		-0.282921
+33:		-0.138294		-0.0869979
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 7 : 
+
+Elapsed time: 839.24s (13m 59s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 10.97 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 12.1 secs
+Time taken for SampleSat = 2 mins, 7.8 secs
+Done with inference
+Getting gradient...
+37
+37528 35827 34525 38711 34743 18666 19438 66947 104549 9066 165643 167825 168827 163146 170705 183292 190473 171007 169568 164167 186929 184803 167116 187479 191215 194211 170922 193606 164184 166208 166815 162343 167215 182301 0 200000 200000 
+Pred*dist = -11.1983
+Real*dist = -4.27643
+Lambda = 100
+Maximum estimated improvement: 6.7318
+Weights:	New		Average
+0:		0.0451395		0.049602
+1:		0.0724715		0.0608946
+2:		0.0333613		0.0275337
+3:		0.0345951		0.0381933
+4:		0.0478613		0.0554572
+5:		-0.0838658		-0.122888
+6:		-0.228281		-0.331861
+7:		0.325874		0.319381
+8:		0.598886		0.616114
+9:		-0.793575		-0.727155
+10:		-0.218766		-0.210466
+11:		-0.267427		-0.219319
+12:		-0.0456222		-0.0916504
+13:		-0.248364		-0.227195
+14:		0.11927		0.00450111
+15:		-0.0740728		-0.0115694
+16:		1.22756		0.884803
+17:		-0.225847		-0.173918
+18:		-0.433933		-0.300643
+19:		-0.405595		-0.31215
+20:		0.806179		0.601635
+21:		-0.0374796		0.026567
+22:		-0.666687		-0.489007
+23:		0.556594		0.458474
+24:		0.954871		0.735448
+25:		1.58302		1.12874
+26:		-0.743241		-0.491155
+27:		0.733002		0.602751
+28:		-0.241759		-0.245783
+29:		-0.221782		-0.222788
+30:		-0.290169		-0.263609
+31:		-0.245801		-0.243209
+32:		-0.289082		-0.283801
+33:		-0.166398		-0.0983409
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 8 : 
+
+Elapsed time: 971.37s (16m 11s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 8.92 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 10.3 secs
+Time taken for SampleSat = 2 mins, 6.02 secs
+Done with inference
+Getting gradient...
+37
+38071 35768 33445 36921 35454 20341 20022 67658 102800 9520 165248 167941 169824 164840 170345 181824 190411 170989 170173 165631 187060 183394 166369 187314 191670 194666 169677 193104 163759 166452 167998 164100 166556 180655 0 200000 200000 
+Pred*dist = -4.64199
+Real*dist = -2.2089
+Lambda = 100
+Maximum estimated improvement: 4.00152
+Weights:	New		Average
+0:		0.0497354		0.0496186
+1:		0.07579		0.0627565
+2:		0.0433637		0.0295124
+3:		0.0324722		0.0374781
+4:		0.0471882		0.0544236
+5:		-0.110083		-0.121287
+6:		-0.212712		-0.316967
+7:		0.327574		0.320405
+8:		0.584748		0.612194
+9:		-0.768462		-0.732318
+10:		-0.226511		-0.212472
+11:		-0.283234		-0.227308
+12:		-0.0364127		-0.0847457
+13:		-0.248172		-0.229817
+14:		0.150661		0.0227711
+15:		-0.0653628		-0.0182935
+16:		1.27403		0.933457
+17:		-0.228641		-0.180759
+18:		-0.460989		-0.320687
+19:		-0.418422		-0.325434
+20:		0.830235		0.63021
+21:		-0.0062279		0.0224676
+22:		-0.697505		-0.515069
+23:		0.565623		0.471868
+24:		0.95236		0.762562
+25:		1.64444		1.1932
+26:		-0.784999		-0.527886
+27:		0.778423		0.62471
+28:		-0.239391		-0.244984
+29:		-0.217937		-0.222182
+30:		-0.303294		-0.26857
+31:		-0.239837		-0.242787
+32:		-0.290923		-0.284691
+33:		-0.14666		-0.104381
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 9 : 
+
+Elapsed time: 1101.69s (18m 21s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 10.06 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 11.48 secs
+Time taken for SampleSat = 2 mins, 7.24 secs
+Done with inference
+Getting gradient...
+37
+40029 35606 34467 36000 35565 18333 19987 70203 100115 9695 163116 168117 169090 165686 170407 183571 190837 171344 169409 166348 187228 185037 164196 187038 191029 195024 169072 193756 161764 166683 167071 164942 166598 182637 0 200000 200000 
+Pred*dist = -2.86147
+Real*dist = 0.249373
+Lambda = 400
+Backtracking!
+
+Iteration 9 : 
+
+Elapsed time: 1233.19s (20m 33s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 9.95 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 11.33 secs
+Time taken for SampleSat = 2 mins, 6.97 secs
+Done with inference
+Getting gradient...
+37
+77128 70657 67011 73624 70812 40768 40104 135763 204771 19362 329580 336625 339624 329926 340809 363540 380533 342949 340290 331323 374021 366647 331863 374765 383168 389441 339368 386166 326640 333690 335885 328438 333366 361343 0 400000 400000 
+Lambda = 400
+Maximum estimated improvement: 1.49947
+Weights:	New		Average
+0:		0.0430623		0.0488902
+1:		0.0763371		0.0642654
+2:		0.0373462		0.0303828
+3:		0.0357144		0.0372822
+4:		0.0477951		0.0536871
+5:		-0.0978319		-0.118681
+6:		-0.225007		-0.306749
+7:		0.325581		0.32098
+8:		0.596469		0.610447
+9:		-0.788891		-0.738604
+10:		-0.217661		-0.213048
+11:		-0.275704		-0.232686
+12:		-0.0440292		-0.0802216
+13:		-0.250083		-0.232069
+14:		0.12679		0.0343288
+15:		-0.0657229		-0.0235635
+16:		1.24574		0.968155
+17:		-0.229608		-0.186186
+18:		-0.442856		-0.334261
+19:		-0.410849		-0.334924
+20:		0.813185		0.650541
+21:		-0.0221869		0.017506
+22:		-0.671525		-0.532453
+23:		0.558543		0.481499
+24:		0.952313		0.783646
+25:		1.60134		1.23855
+26:		-0.753048		-0.552904
+27:		0.751531		0.638801
+28:		-0.237954		-0.244203
+29:		-0.223108		-0.222285
+30:		-0.29521		-0.27153
+31:		-0.245674		-0.243108
+32:		-0.290204		-0.285304
+33:		-0.155347		-0.110044
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 10 : 
+
+Elapsed time: 1364.54s (22m 44s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 8.74 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 10.15 secs
+Time taken for SampleSat = 2 mins, 5.89 secs
+Done with inference
+Getting gradient...
+37
+38830 35636 34392 36477 35234 19431 20102 68356 101989 9553 164518 168189 168960 165259 170589 182587 190525 171060 169469 165990 187192 184120 165454 187262 191368 194719 169754 193432 163013 166581 167027 164601 166763 181568 0 200000 200000 
+Pred*dist = -1.1858
+Real*dist = -0.792669
+Lambda = 400
+Maximum estimated improvement: 1.08146
+Weights:	New		Average
+0:		0.0391148		0.0479126
+1:		0.0795041		0.0657893
+2:		0.0346795		0.0308125
+3:		0.0395975		0.0375137
+4:		0.0490549		0.0532239
+5:		-0.101132		-0.116926
+6:		-0.221652		-0.29824
+7:		0.321676		0.32105
+8:		0.595574		0.608959
+9:		-0.778467		-0.74259
+10:		-0.214436		-0.213187
+11:		-0.286562		-0.238073
+12:		-0.0331469		-0.0755142
+13:		-0.254532		-0.234315
+14:		0.132773		0.0441732
+15:		-0.0689588		-0.028103
+16:		1.2619		0.99753
+17:		-0.231492		-0.190717
+18:		-0.447869		-0.345622
+19:		-0.419246		-0.343357
+20:		0.820203		0.667507
+21:		-0.0161914		0.0141363
+22:		-0.672079		-0.546416
+23:		0.563171		0.489666
+24:		0.955677		0.800849
+25:		1.62163		1.27686
+26:		-0.764575		-0.574071
+27:		0.766559		0.651577
+28:		-0.232496		-0.243033
+29:		-0.222981		-0.222354
+30:		-0.293706		-0.273748
+31:		-0.248701		-0.243668
+32:		-0.292236		-0.285997
+33:		-0.15598		-0.114637
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 11 : 
+
+Elapsed time: 1494.71s (24m 54s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 9.6 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 10.95 secs
+Time taken for SampleSat = 2 mins, 6.82 secs
+Done with inference
+Getting gradient...
+37
+38516 36550 33960 37125 34603 19246 20096 67618 102673 9613 164675 167282 169532 164671 171308 182628 190774 170306 169769 165239 187319 184211 165722 186995 191288 194799 170151 193718 163281 165767 167531 163916 167413 181705 0 200000 200000 
+Pred*dist = -0.901482
+Real*dist = -0.600854
+Lambda = 400
+Maximum estimated improvement: 0.947506
+Weights:	New		Average
+0:		0.036397		0.0468657
+1:		0.0756637		0.066687
+2:		0.0353889		0.0312286
+3:		0.0397341		0.0377156
+4:		0.0540835		0.053302
+5:		-0.101336		-0.115509
+6:		-0.218077		-0.290952
+7:		0.321424		0.321084
+8:		0.591816		0.607401
+9:		-0.768679		-0.744962
+10:		-0.212025		-0.213081
+11:		-0.291976		-0.242974
+12:		-0.025487		-0.0709662
+13:		-0.255427		-0.236234
+14:		0.134235		0.0523607
+15:		-0.072618		-0.0321498
+16:		1.27277		1.02255
+17:		-0.226735		-0.193991
+18:		-0.457088		-0.355755
+19:		-0.423829		-0.350672
+20:		0.824552		0.681784
+21:		-0.0123745		0.0117262
+22:		-0.674215		-0.558034
+23:		0.576679		0.497576
+24:		0.960823		0.815392
+25:		1.63848		1.30973
+26:		-0.780676		-0.592853
+27:		0.772865		0.662603
+28:		-0.227408		-0.241612
+29:		-0.215767		-0.221756
+30:		-0.296929		-0.275855
+31:		-0.247427		-0.244009
+32:		-0.298739		-0.287155
+33:		-0.158605		-0.118634
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 12 : 
+
+Elapsed time: 1625.69s (27m 5s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 9.57 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 10.71 secs
+Time taken for SampleSat = 2 mins, 6.51 secs
+Done with inference
+Getting gradient...
+37
+38056 35474 34108 36992 36117 19253 19862 68520 102096 9522 165022 168152 169352 164769 169819 182748 191005 171231 169638 165346 187030 184270 166067 187491 191345 194917 168764 193512 163738 166704 167341 163992 166036 181711 0 200000 200000 
+Pred*dist = -0.773057
+Real*dist = -0.34769
+Lambda = 400
+Maximum estimated improvement: 0.835776
+Weights:	New		Average
+0:		0.0355842		0.0459256
+1:		0.0765742		0.0675109
+2:		0.0357706		0.0316071
+3:		0.0398665		0.0378948
+4:		0.0521429		0.0532054
+5:		-0.10104		-0.114303
+6:		-0.210813		-0.284274
+7:		0.318583		0.320875
+8:		0.588945		0.605863
+9:		-0.755835		-0.745868
+10:		-0.210676		-0.212881
+11:		-0.30352		-0.248019
+12:		-0.0175158		-0.066512
+13:		-0.256423		-0.237917
+14:		0.147752		0.06031
+15:		-0.0779217		-0.0359641
+16:		1.28065		1.04406
+17:		-0.225999		-0.196659
+18:		-0.466411		-0.364976
+19:		-0.429626		-0.357252
+20:		0.834771		0.694533
+21:		-0.00864461		0.0100286
+22:		-0.679019		-0.568116
+23:		0.584759		0.504841
+24:		0.966184		0.827958
+25:		1.65869		1.33881
+26:		-0.792269		-0.609471
+27:		0.784412		0.672754
+28:		-0.223348		-0.24009
+29:		-0.211989		-0.220942
+30:		-0.299604		-0.277834
+31:		-0.245162		-0.244105
+32:		-0.299419		-0.288177
+33:		-0.162032		-0.122251
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 13 : 
+
+Elapsed time: 1756.42s (29m 16s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 7.77 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 9.17 secs
+Time taken for SampleSat = 2 mins, 5 secs
+Done with inference
+Getting gradient...
+37
+37743 36071 34086 36741 36014 19345 20176 68066 102179 9579 165395 167688 169404 164969 170147 182573 191166 170704 169597 165621 186914 184064 166184 187188 191431 194947 168760 193669 164026 166207 167310 164240 166137 181659 0 200000 200000 
+Pred*dist = -0.777951
+Real*dist = -0.693697
+Lambda = 200
+Maximum estimated improvement: 1.0825
+Weights:	New		Average
+0:		0.0419469		0.0456196
+1:		0.0754963		0.0681252
+2:		0.0359781		0.0319433
+3:		0.0436469		0.0383373
+4:		0.0432202		0.0524373
+5:		-0.102063		-0.113362
+6:		-0.205487		-0.278213
+7:		0.316743		0.320557
+8:		0.586798		0.604396
+9:		-0.74189		-0.745562
+10:		-0.21607		-0.213126
+11:		-0.315102		-0.253179
+12:		-0.00912833		-0.0620979
+13:		-0.260177		-0.239629
+14:		0.168563		0.0686371
+15:		-0.0830495		-0.0395861
+16:		1.27732		1.062
+17:		-0.222745		-0.198665
+18:		-0.474916		-0.373433
+19:		-0.440483		-0.363654
+20:		0.851026		0.70657
+21:		0.00389325		0.00955667
+22:		-0.688596		-0.577384
+23:		0.595092		0.511784
+24:		0.968837		0.838795
+25:		1.68234		1.36524
+26:		-0.797298		-0.623919
+27:		0.792456		0.681962
+28:		-0.224679		-0.238905
+29:		-0.204509		-0.219678
+30:		-0.301322		-0.279641
+31:		-0.245489		-0.244212
+32:		-0.293317		-0.288573
+33:		-0.165836		-0.125604
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 14 : 
+
+Elapsed time: 1885.61s (31m 25s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 12.05 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 13.42 secs
+Time taken for SampleSat = 2 mins, 9.34 secs
+Done with inference
+Getting gradient...
+37
+38629 35745 34471 37891 34159 19105 20128 67141 103214 9517 164581 167927 169148 163854 171826 182792 190985 170813 169078 164386 187518 184361 165440 187480 191350 194957 170307 193680 163107 166545 167011 163130 167872 181852 0 200000 200000 
+Pred*dist = -0.808771
+Real*dist = 0.04145
+Lambda = 800
+Backtracking!
+
+Iteration 14 : 
+
+Elapsed time: 2019.05s (33m 39s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 10.16 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 11.29 secs
+Time taken for SampleSat = 2 mins, 7.04 secs
+Done with inference
+Getting gradient...
+37
+75109 71418 68117 74449 72165 38742 40248 136026 204635 19091 331219 335920 338907 329022 340067 365113 382297 341990 339212 330279 374127 368121 332767 374799 382769 389813 337199 387288 328390 333037 334761 327539 332112 363252 0 400000 400000 
+Lambda = 800
+Maximum estimated improvement: 0.483849
+Weights:	New		Average
+0:		0.038869		0.0451374
+1:		0.0780081		0.0688311
+2:		0.0359801		0.0322316
+3:		0.0390665		0.0383894
+4:		0.0476426		0.0520948
+5:		-0.10168		-0.112527
+6:		-0.208471		-0.273232
+7:		0.317874		0.320366
+8:		0.587617		0.603198
+9:		-0.749537		-0.745846
+10:		-0.213859		-0.213179
+11:		-0.309269		-0.257186
+12:		-0.0142494		-0.0586801
+13:		-0.255785		-0.240783
+14:		0.157317		0.0749714
+15:		-0.0796721		-0.0424494
+16:		1.27914		1.07751
+17:		-0.226328		-0.200641
+18:		-0.469887		-0.380323
+19:		-0.431381		-0.368492
+20:		0.840433		0.716132
+21:		-0.00402189		0.00858677
+22:		-0.683745		-0.584981
+23:		0.58632		0.517108
+24:		0.967941		0.848019
+25:		1.66699		1.38679
+26:		-0.793128		-0.636006
+27:		0.787763		0.689519
+28:		-0.224734		-0.237892
+29:		-0.211003		-0.219058
+30:		-0.300607		-0.281139
+31:		-0.243203		-0.24414
+32:		-0.296199		-0.289118
+33:		-0.163268		-0.128294
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 15 : 
+
+Elapsed time: 2150.37s (35m 50s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 6.8 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 8.22 secs
+Time taken for SampleSat = 2 mins, 4.14 secs
+Done with inference
+Getting gradient...
+37
+38532 36273 33577 37154 35246 19218 20343 67976 101924 9757 164764 167513 169881 164578 170856 182751 190726 170460 170029 165147 187298 184316 165680 187056 191465 194951 169262 193510 163234 166152 167894 163862 166846 181769 0 200000 200000 
+Pred*dist = -0.413836
+Real*dist = -0.167902
+Lambda = 800
+Maximum estimated improvement: 0.32143
+Weights:	New		Average
+0:		0.0389392		0.0447242
+1:		0.0771262		0.0693841
+2:		0.0375905		0.0325889
+3:		0.0382674		0.0383812
+4:		0.0465316		0.051724
+5:		-0.101346		-0.111782
+6:		-0.207165		-0.268827
+7:		0.317101		0.320148
+8:		0.587011		0.602119
+9:		-0.745182		-0.745802
+10:		-0.214282		-0.213252
+11:		-0.314664		-0.261018
+12:		-0.0126075		-0.0556086
+13:		-0.255099		-0.241737
+14:		0.162938		0.0808359
+15:		-0.0832823		-0.0451716
+16:		1.28313		1.09122
+17:		-0.223947		-0.202195
+18:		-0.474533		-0.386603
+19:		-0.432844		-0.372782
+20:		0.844431		0.724685
+21:		-0.00151925		0.00791304
+22:		-0.686624		-0.591757
+23:		0.591764		0.522085
+24:		0.968753		0.856068
+25:		1.67465		1.40598
+26:		-0.797062		-0.646743
+27:		0.793796		0.696471
+28:		-0.222381		-0.236858
+29:		-0.208362		-0.218345
+30:		-0.303113		-0.282603
+31:		-0.241254		-0.243947
+32:		-0.296323		-0.289598
+33:		-0.165617		-0.130782
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 16 : 
+
+Elapsed time: 2278.62s (37m 58s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 7.34 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 8.75 secs
+Time taken for SampleSat = 2 mins, 4.45 secs
+Done with inference
+Getting gradient...
+37
+37776 36047 34349 37089 35704 19035 20376 67616 102475 9533 165443 167594 169285 164655 170466 182933 190975 170664 169219 165075 187241 184442 166188 187327 191361 195174 168824 193601 164066 166274 167088 163829 166357 181919 0 200000 200000 
+Pred*dist = -0.300305
+Real*dist = -0.234604
+Lambda = 400
+Maximum estimated improvement: 0.557002
+Weights:	New		Average
+0:		0.0426057		0.0445918
+1:		0.0761927		0.0698096
+2:		0.0370831		0.0328698
+3:		0.0371179		0.0383023
+4:		0.0439381		0.0512373
+5:		-0.0977891		-0.110907
+6:		-0.205885		-0.264893
+7:		0.317246		0.319967
+8:		0.583867		0.600978
+9:		-0.732403		-0.744964
+10:		-0.21796		-0.213546
+11:		-0.322149		-0.264838
+12:		-0.00623003		-0.0525225
+13:		-0.254249		-0.242519
+14:		0.172585		0.0865702
+15:		-0.0930256		-0.0481625
+16:		1.28844		1.10355
+17:		-0.220411		-0.203333
+18:		-0.479537		-0.392412
+19:		-0.434974		-0.376669
+20:		0.8506		0.732555
+21:		-0.000193664		0.00740637
+22:		-0.695278		-0.598227
+23:		0.598528		0.526862
+24:		0.973375		0.8634
+25:		1.67991		1.4231
+26:		-0.801936		-0.656442
+27:		0.805216		0.703267
+28:		-0.221871		-0.235922
+29:		-0.204489		-0.217479
+30:		-0.304158		-0.283951
+31:		-0.237311		-0.243533
+32:		-0.295481		-0.289966
+33:		-0.172734		-0.133404
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 17 : 
+
+Elapsed time: 2407.4s (40m 7s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 8.49 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 9.85 secs
+Time taken for SampleSat = 2 mins, 5.65 secs
+Done with inference
+Getting gradient...
+37
+38111 36291 34371 36937 34827 19463 20164 67078 103026 9732 165091 167331 169349 164768 171184 182441 190899 170303 169176 165276 187394 184030 165919 187429 191269 195067 169753 193589 163758 166064 167093 164078 167188 181551 0 200000 200000 
+Pred*dist = -0.483742
+Real*dist = -0.355695
+Lambda = 400
+Maximum estimated improvement: 0.468044
+Weights:	New		Average
+0:		0.0446711		0.0445964
+1:		0.0744009		0.0700797
+2:		0.035034		0.0329971
+3:		0.0368606		0.0382175
+4:		0.0451911		0.0508817
+5:		-0.0975617		-0.110122
+6:		-0.202942		-0.261249
+7:		0.31929		0.319927
+8:		0.579485		0.599714
+9:		-0.722894		-0.743666
+10:		-0.219998		-0.213926
+11:		-0.327206		-0.268507
+12:		0.00089781		-0.0493801
+13:		-0.254136		-0.243203
+14:		0.177413		0.0919139
+15:		-0.09767		-0.0510747
+16:		1.29371		1.11473
+17:		-0.215601		-0.204055
+18:		-0.48287		-0.397733
+19:		-0.437486		-0.380246
+20:		0.854353		0.73972
+21:		0.00440748		0.00722996
+22:		-0.701645		-0.604311
+23:		0.602363		0.531304
+24:		0.979729		0.870243
+25:		1.68514		1.43852
+26:		-0.809659		-0.665455
+27:		0.81493		0.709836
+28:		-0.220785		-0.235031
+29:		-0.200028		-0.216452
+30:		-0.303806		-0.285119
+31:		-0.235037		-0.243033
+32:		-0.298212		-0.290451
+33:		-0.17632		-0.135929
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 18 : 
+
+Elapsed time: 2537.27s (42m 17s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 8.36 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 9.71 secs
+Time taken for SampleSat = 2 mins, 5.59 secs
+Done with inference
+Getting gradient...
+37
+39947 35630 33433 36306 35140 19544 19953 69681 100632 9734 163250 167943 170144 165243 170950 182423 190932 171009 170159 166083 187483 184015 164052 187442 191342 195132 169205 193459 161925 166716 168056 164624 166942 181471 0 200000 200000 
+Pred*dist = -0.371716
+Real*dist = -0.0107571
+Lambda = 400
+Maximum estimated improvement: 0.309505
+Weights:	New		Average
+0:		0.0442593		0.0445777
+1:		0.0733285		0.0702602
+2:		0.0339946		0.0330525
+3:		0.0376638		0.0381867
+4:		0.0465103		0.0506388
+5:		-0.0978362		-0.10944
+6:		-0.199566		-0.257822
+7:		0.31965		0.319912
+8:		0.576723		0.598436
+9:		-0.713855		-0.74201
+10:		-0.219535		-0.214237
+11:		-0.332921		-0.272086
+12:		0.00695783		-0.0462502
+13:		-0.254883		-0.243852
+14:		0.181978		0.0969174
+15:		-0.101786		-0.053892
+16:		1.29906		1.12497
+17:		-0.211563		-0.204472
+18:		-0.487304		-0.402709
+19:		-0.441658		-0.383658
+20:		0.85763		0.74627
+21:		0.00937689		0.00734924
+22:		-0.705334		-0.609923
+23:		0.605842		0.535445
+24:		0.985747		0.87666
+25:		1.68991		1.45248
+26:		-0.817084		-0.673879
+27:		0.824805		0.716223
+28:		-0.217386		-0.234051
+29:		-0.19628		-0.215332
+30:		-0.304548		-0.286198
+31:		-0.233689		-0.242514
+32:		-0.300997		-0.291037
+33:		-0.179391		-0.138343
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 19 : 
+
+Elapsed time: 2667.02s (44m 27s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 11.15 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 12.55 secs
+Time taken for SampleSat = 2 mins, 8.48 secs
+Done with inference
+Getting gradient...
+37
+39317 35525 33390 36289 36014 19465 20187 68851 101125 9837 163798 168077 170072 165441 170375 182424 190802 170971 170062 165952 186975 184089 164812 187625 191660 195006 168470 193552 162637 166752 168036 164734 166138 181540 0 200000 200000 
+Pred*dist = -0.277457
+Real*dist = -0.239234
+Lambda = 200
+Maximum estimated improvement: 1.00534
+Weights:	New		Average
+0:		0.035459		0.0440978
+1:		0.0772048		0.0706257
+2:		0.038202		0.0333235
+3:		0.0424828		0.0384128
+4:		0.0418729		0.0501775
+5:		-0.0994291		-0.108913
+6:		-0.198979		-0.254725
+7:		0.314493		0.319626
+8:		0.580344		0.597484
+9:		-0.715297		-0.740604
+10:		-0.209797		-0.214004
+11:		-0.338654		-0.275589
+12:		0.00411838		-0.0435992
+13:		-0.260479		-0.244727
+14:		0.187481		0.101684
+15:		-0.100427		-0.0563412
+16:		1.30304		1.13435
+17:		-0.213772		-0.204962
+18:		-0.492046		-0.407411
+19:		-0.447314		-0.387009
+20:		0.86323		0.752426
+21:		0.0124426		0.00761731
+22:		-0.698332		-0.614576
+23:		0.602139		0.538955
+24:		0.979919		0.882095
+25:		1.69501		1.46525
+26:		-0.813711		-0.681239
+27:		0.827053		0.722056
+28:		-0.2072		-0.232638
+29:		-0.198769		-0.21446
+30:		-0.30928		-0.287413
+31:		-0.237983		-0.242275
+32:		-0.297476		-0.291376
+33:		-0.178587		-0.140461
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 20 : 
+
+Elapsed time: 2799.6s (46m 39s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 8.7 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 9.82 secs
+Time taken for SampleSat = 2 mins, 5.76 secs
+Done with inference
+Getting gradient...
+37
+38147 35511 34348 37804 34888 19302 20035 67878 102217 9870 164971 168015 169328 163896 171260 182565 191364 171160 169101 164510 187536 184207 165551 187327 191314 195008 169347 193670 163673 166965 167213 163174 167193 181652 0 200000 200000 
+Pred*dist = -0.584445
+Real*dist = 0.169592
+Lambda = 800
+Backtracking!
+
+Iteration 20 : 
+
+Elapsed time: 2929.44s (48m 49s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 10.29 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 11.69 secs
+Time taken for SampleSat = 2 mins, 7.35 secs
+Done with inference
+Getting gradient...
+37
+77115 71638 67391 72940 71796 39120 40249 137125 203081 19545 329078 335445 339714 330336 340996 364680 382094 341756 339712 331490 374012 368061 330903 374906 382883 390311 337043 387035 326580 332979 335518 329043 332561 362864 0 400000 400000 
+Lambda = 800
+Maximum estimated improvement: 0.332921
+Weights:	New		Average
+0:		0.0435683		0.0440713
+1:		0.0739395		0.0707914
+2:		0.0354437		0.0334295
+3:		0.0405059		0.0385175
+4:		0.0441948		0.0498783
+5:		-0.100067		-0.108471
+6:		-0.19711		-0.251845
+7:		0.316962		0.319493
+8:		0.577425		0.596481
+9:		-0.710677		-0.739108
+10:		-0.218285		-0.214218
+11:		-0.337172		-0.278668
+12:		0.00829534		-0.0410045
+13:		-0.257178		-0.245349
+14:		0.18641		0.10592
+15:		-0.101314		-0.0585898
+16:		1.2989		1.14257
+17:		-0.210993		-0.205263
+18:		-0.491875		-0.411634
+19:		-0.446268		-0.389972
+20:		0.862841		0.757947
+21:		0.0140628		0.00793958
+22:		-0.706591		-0.619177
+23:		0.606825		0.542348
+24:		0.98712		0.887346
+25:		1.68924		1.47645
+26:		-0.817588		-0.688056
+27:		0.830917		0.727499
+28:		-0.215029		-0.231757
+29:		-0.195138		-0.213494
+30:		-0.306892		-0.288387
+31:		-0.235117		-0.241917
+32:		-0.30002		-0.291808
+33:		-0.178791		-0.142378
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 21 : 
+
+Elapsed time: 3061.15s (51m 1s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 11.95 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 13.36 secs
+Time taken for SampleSat = 2 mins, 9.05 secs
+Done with inference
+Getting gradient...
+37
+38982 35163 33531 37763 35239 19322 20148 67936 102248 9668 164351 168225 170109 163893 171021 182549 191034 171332 169822 164448 187179 184121 164851 187811 191633 195153 169129 193671 162818 167143 167843 163217 166954 181693 0 200000 200000 
+Pred*dist = -0.263091
+Real*dist = -0.114325
+Lambda = 800
+Maximum estimated improvement: 0.470715
+Weights:	New		Average
+0:		0.0395564		0.0438563
+1:		0.0770091		0.0710875
+2:		0.0380365		0.0336489
+3:		0.0399466		0.0385855
+4:		0.0431576		0.0495583
+5:		-0.101634		-0.108145
+6:		-0.194179		-0.249099
+7:		0.314782		0.319269
+8:		0.57705		0.595556
+9:		-0.706258		-0.737543
+10:		-0.214712		-0.214241
+11:		-0.343889		-0.281774
+12:		0.00880939		-0.0386324
+13:		-0.255658		-0.24584
+14:		0.190299		0.109938
+15:		-0.101825		-0.0606487
+16:		1.2992		1.15003
+17:		-0.212948		-0.205629
+18:		-0.497579		-0.415727
+19:		-0.44771		-0.392721
+20:		0.86802		0.763188
+21:		0.0191519		0.0084735
+22:		-0.704729		-0.623251
+23:		0.604734		0.545319
+24:		0.986274		0.892057
+25:		1.68889		1.48656
+26:		-0.819803		-0.69433
+27:		0.83662		0.732695
+28:		-0.208348		-0.230643
+29:		-0.196225		-0.212672
+30:		-0.310267		-0.289429
+31:		-0.232767		-0.241482
+32:		-0.300944		-0.292243
+33:		-0.179497		-0.144145
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 22 : 
+
+Elapsed time: 3194.54s (53m 14s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 10.47 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 11.59 secs
+Time taken for SampleSat = 2 mins, 7.64 secs
+Done with inference
+Getting gradient...
+37
+38817 35651 34227 37162 34746 19397 20298 67881 102032 9789 164471 167826 169437 164597 171445 182522 191093 170872 169325 164996 187479 184116 164977 187697 191246 195028 169453 193631 163008 166652 167311 163893 167385 181540 0 200000 200000 
+Pred*dist = -0.373915
+Real*dist = -0.264114
+Lambda = 800
+Maximum estimated improvement: 0.322253
+Weights:	New		Average
+0:		0.0362459		0.0435104
+1:		0.0789883		0.0714466
+2:		0.0374063		0.0338197
+3:		0.0387948		0.038595
+4:		0.0462504		0.0494079
+5:		-0.10254		-0.10789
+6:		-0.193319		-0.246563
+7:		0.314445		0.319049
+8:		0.576621		0.594695
+9:		-0.70468		-0.73605
+10:		-0.211791		-0.21413
+11:		-0.348721		-0.284817
+12:		0.0122796		-0.0363182
+13:		-0.254782		-0.246247
+14:		0.189511		0.113555
+15:		-0.102832		-0.0625661
+16:		1.29879		1.15679
+17:		-0.21276		-0.205953
+18:		-0.499354		-0.419528
+19:		-0.448338		-0.395249
+20:		0.868082		0.767956
+21:		0.0225453		0.00911313
+22:		-0.702303		-0.626844
+23:		0.601738		0.547884
+24:		0.989697		0.896495
+25:		1.69238		1.49592
+26:		-0.824713		-0.700256
+27:		0.840298		0.737586
+28:		-0.203148		-0.229393
+29:		-0.196519		-0.211937
+30:		-0.310853		-0.290403
+31:		-0.230322		-0.240974
+32:		-0.305234		-0.292833
+33:		-0.179871		-0.145769
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 23 : 
+
+Elapsed time: 3326.15s (55m 26s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 9.41 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 10.77 secs
+Time taken for SampleSat = 2 mins, 6.67 secs
+Done with inference
+Getting gradient...
+37
+37998 36401 34000 36984 35509 19108 19853 68436 101730 9981 164959 167210 169702 164687 170552 182743 191388 170465 169509 165166 187524 184384 165819 187155 191209 195077 168762 193708 163840 165967 167580 164118 166635 181841 0 200000 200000 
+Pred*dist = -0.249319
+Real*dist = -0.0361593
+Lambda = 800
+Maximum estimated improvement: 0.207681
+Weights:	New		Average
+0:		0.0355213		0.043163
+1:		0.0783958		0.0717487
+2:		0.0374659		0.0339782
+3:		0.038288		0.0385817
+4:		0.0472589		0.0493145
+5:		-0.10153		-0.107614
+6:		-0.189488		-0.244082
+7:		0.312497		0.318765
+8:		0.576727		0.593914
+9:		-0.704683		-0.734686
+10:		-0.210161		-0.213957
+11:		-0.351985		-0.287737
+12:		0.0151728		-0.0340795
+13:		-0.25429		-0.246596
+14:		0.193131		0.117015
+15:		-0.106243		-0.0644651
+16:		1.29423		1.16277
+17:		-0.209993		-0.206129
+18:		-0.50213		-0.423119
+19:		-0.449567		-0.397611
+20:		0.867541		0.772286
+21:		0.0243181		0.00977422
+22:		-0.70304		-0.630157
+23:		0.603264		0.550291
+24:		0.994957		0.900776
+25:		1.69644		1.50464
+26:		-0.828237		-0.705821
+27:		0.843435		0.742189
+28:		-0.200332		-0.228129
+29:		-0.194213		-0.211167
+30:		-0.312527		-0.291364
+31:		-0.228838		-0.240447
+32:		-0.307903		-0.293489
+33:		-0.182782		-0.147378
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 24 : 
+
+Elapsed time: 3456.94s (57m 36s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 10.18 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 11.55 secs
+Time taken for SampleSat = 2 mins, 7.42 secs
+Done with inference
+Getting gradient...
+37
+38129 36597 34508 36349 35351 19066 20385 67482 102261 9872 165101 167066 169174 165306 171073 182665 191115 170197 168869 165818 187048 184435 165592 187037 191479 195212 169131 193810 163805 165909 166954 164617 166695 181892 0 200000 200000 
+Pred*dist = -0.188843
+Real*dist = -0.111915
+Lambda = 800
+Maximum estimated improvement: 0.310569
+Weights:	New		Average
+0:		0.0352411		0.0428329
+1:		0.074886		0.0718795
+2:		0.036289		0.0340745
+3:		0.0397466		0.0386302
+4:		0.0481324		0.0492652
+5:		-0.0996156		-0.10728
+6:		-0.186971		-0.241702
+7:		0.312034		0.318484
+8:		0.576137		0.593173
+9:		-0.704322		-0.733421
+10:		-0.209401		-0.213768
+11:		-0.354357		-0.290513
+12:		0.0197424		-0.0318369
+13:		-0.255741		-0.246977
+14:		0.196614		0.120332
+15:		-0.109765		-0.0663526
+16:		1.29086		1.16811
+17:		-0.204599		-0.206065
+18:		-0.503411		-0.426465
+19:		-0.453048		-0.399921
+20:		0.870435		0.776376
+21:		0.0252011		0.010417
+22:		-0.703965		-0.633232
+23:		0.609119		0.552743
+24:		0.998237		0.904837
+25:		1.69798		1.51269
+26:		-0.834478		-0.711181
+27:		0.844952		0.74647
+28:		-0.198309		-0.226887
+29:		-0.189117		-0.210248
+30:		-0.31277		-0.292256
+31:		-0.229045		-0.239972
+32:		-0.310612		-0.294202
+33:		-0.186935		-0.149027
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 25 : 
+
+Elapsed time: 3588.51s (59m 48s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 10.13 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 11.52 secs
+Time taken for SampleSat = 2 mins, 7.44 secs
+Done with inference
+Getting gradient...
+37
+37854 35975 34210 36804 35658 19499 20771 67203 101968 10058 165428 167679 169558 164828 170869 182409 190823 170640 169148 165372 187107 184113 166062 187224 191311 195156 168667 193548 164125 166532 167353 164232 166383 181433 0 200000 200000 
+Pred*dist = -0.27078
+Real*dist = -0.103704
+Lambda = 800
+Maximum estimated improvement: 0.228673
+Weights:	New		Average
+0:		0.0366743		0.0425866
+1:		0.0737439		0.071954
+2:		0.0353315		0.0341248
+3:		0.0410862		0.0387285
+4:		0.0464822		0.0491539
+5:		-0.100737		-0.107019
+6:		-0.188213		-0.239562
+7:		0.313851		0.318299
+8:		0.575704		0.592475
+9:		-0.705594		-0.732308
+10:		-0.211216		-0.213665
+11:		-0.358866		-0.293247
+12:		0.02367		-0.0296166
+13:		-0.256777		-0.247369
+14:		0.201068		0.123561
+15:		-0.111072		-0.0681414
+16:		1.29311		1.17311
+17:		-0.201221		-0.205871
+18:		-0.504638		-0.429592
+19:		-0.456404		-0.40218
+20:		0.876606		0.780385
+21:		0.0281307		0.0111256
+22:		-0.707607		-0.636207
+23:		0.61333		0.555166
+24:		1.00105		0.908685
+25:		1.69856		1.52013
+26:		-0.837587		-0.716238
+27:		0.849951		0.75061
+28:		-0.198577		-0.225754
+29:		-0.186986		-0.209318
+30:		-0.313573		-0.293109
+31:		-0.229231		-0.239542
+32:		-0.310543		-0.294856
+33:		-0.187768		-0.150576
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 26 : 
+
+Elapsed time: 3720.07s (1h 2m 0s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 9.37 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 10.74 secs
+Time taken for SampleSat = 2 mins, 6.66 secs
+Done with inference
+Getting gradient...
+37
+38244 35426 33766 37378 35908 19278 20597 67850 101608 9945 164950 168061 170051 164258 170700 182577 191252 171159 169544 164750 187020 184125 165432 187484 191377 195212 168332 193771 163634 167018 167730 163646 166224 181693 0 200000 200000 
+Pred*dist = -0.208006
+Real*dist = -0.0792506
+Lambda = 800
+Maximum estimated improvement: 0.183814
+Weights:	New		Average
+0:		0.0374019		0.0423872
+1:		0.0740634		0.0720352
+2:		0.0357738		0.0341882
+3:		0.0407917		0.0388078
+4:		0.0438202		0.0489488
+5:		-0.101266		-0.106797
+6:		-0.189727		-0.237646
+7:		0.314849		0.318166
+8:		0.576043		0.591843
+9:		-0.706642		-0.73132
+10:		-0.212145		-0.213607
+11:		-0.363545		-0.295951
+12:		0.0258511		-0.0274833
+13:		-0.256027		-0.247702
+14:		0.206029		0.126733
+15:		-0.11297		-0.0698655
+16:		1.29234		1.17769
+17:		-0.199729		-0.205635
+18:		-0.507251		-0.432579
+19:		-0.457928		-0.404324
+20:		0.88371		0.784359
+21:		0.031994		0.0119282
+22:		-0.709873		-0.639041
+23:		0.6159		0.557502
+24:		1.00346		0.91233
+25:		1.69808		1.52697
+26:		-0.838753		-0.72095
+27:		0.853127		0.754552
+28:		-0.197925		-0.224684
+29:		-0.186497		-0.20844
+30:		-0.315769		-0.293981
+31:		-0.227695		-0.239086
+32:		-0.309604		-0.295423
+33:		-0.18951		-0.152074
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 27 : 
+
+Elapsed time: 3850.83s (1h 4m 10s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 9.05 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 10.42 secs
+Time taken for SampleSat = 2 mins, 6.63 secs
+Done with inference
+Getting gradient...
+37
+37202 36088 33611 37021 36541 19537 20234 67955 101622 10189 165964 167344 170031 164601 170004 182290 191267 170699 169616 165232 187022 184119 166449 187295 191615 195096 167692 193475 164714 166398 167905 164008 165659 181505 0 200000 200000 
+Pred*dist = -0.166892
+Real*dist = -0.242017
+Lambda = 400
+Maximum estimated improvement: 0.628931
+Weights:	New		Average
+0:		0.040436		0.0423149
+1:		0.0743174		0.0721197
+2:		0.0373348		0.0343048
+3:		0.040311		0.0388635
+4:		0.0367428		0.0484967
+5:		-0.102868		-0.106652
+6:		-0.191297		-0.235929
+7:		0.315982		0.318085
+8:		0.576951		0.591291
+9:		-0.70977		-0.730522
+10:		-0.215689		-0.213684
+11:		-0.370922		-0.298728
+12:		0.0288454		-0.025397
+13:		-0.254607		-0.247958
+14:		0.217075		0.130079
+15:		-0.115159		-0.0715431
+16:		1.28985		1.18185
+17:		-0.197038		-0.205317
+18:		-0.5122		-0.435528
+19:		-0.460966		-0.406422
+20:		0.89654		0.788514
+21:		0.0385256		0.0129133
+22:		-0.715475		-0.641871
+23:		0.620606		0.559839
+24:		1.00543		0.915779
+25:		1.69824		1.53331
+26:		-0.837647		-0.725272
+27:		0.86051		0.758477
+28:		-0.198698		-0.223722
+29:		-0.185361		-0.207585
+30:		-0.320262		-0.294954
+31:		-0.224874		-0.23856
+32:		-0.30573		-0.295805
+33:		-0.191959		-0.153551
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 28 : 
+
+Elapsed time: 3981.28s (1h 6m 21s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 8.82 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 10.14 secs
+Time taken for SampleSat = 2 mins, 6.2 secs
+Done with inference
+Getting gradient...
+37
+38670 35752 34442 37017 34853 19266 20107 67932 102452 9509 164626 167651 169277 164620 171431 182502 190933 171036 168936 165118 187697 184212 165224 187497 191329 195276 169285 193841 163207 166560 167132 163935 167028 181647 0 200000 200000 
+Pred*dist = -0.454932
+Real*dist = 0.0980347
+Lambda = 1600
+Backtracking!
+
+Iteration 28 : 
+
+Elapsed time: 4111.45s (1h 8m 31s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 10.23 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 11.6 secs
+Time taken for SampleSat = 2 mins, 7.35 secs
+Done with inference
+Getting gradient...
+37
+74777 72081 67703 74165 72457 38817 40403 135743 203623 20231 331452 334821 339527 329180 340563 364860 382475 341582 338937 330255 374068 368426 332782 374445 383143 390184 336008 387061 328960 332909 335284 327886 331990 363202 0 400000 400000 
+Lambda = 1600
+Maximum estimated improvement: 0.18593
+Weights:	New		Average
+0:		0.0403429		0.0422445
+1:		0.073824		0.0721806
+2:		0.036326		0.0343769
+3:		0.040511		0.0389223
+4:		0.0421883		0.0482714
+5:		-0.101561		-0.10647
+6:		-0.188165		-0.234223
+7:		0.314312		0.31795
+8:		0.576046		0.590747
+9:		-0.707981		-0.729717
+10:		-0.214765		-0.213723
+11:		-0.363476		-0.30104
+12:		0.0261038		-0.0235577
+13:		-0.255779		-0.248237
+14:		0.20851		0.13288
+15:		-0.112612		-0.0730099
+16:		1.29058		1.18573
+17:		-0.199798		-0.20512
+18:		-0.507922		-0.438113
+19:		-0.458181		-0.40827
+20:		0.884655		0.791947
+21:		0.0317098		0.0135846
+22:		-0.713685		-0.644436
+23:		0.617109		0.561885
+24:		1.00136		0.918835
+25:		1.69955		1.53925
+26:		-0.836711		-0.729252
+27:		0.8558		0.761953
+28:		-0.200334		-0.222886
+29:		-0.186126		-0.206819
+30:		-0.316338		-0.295718
+31:		-0.227021		-0.238148
+32:		-0.30835		-0.296253
+33:		-0.189545		-0.154836
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 29 : 
+
+Elapsed time: 4243.08s (1h 10m 43s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 12.38 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 13.53 secs
+Time taken for SampleSat = 2 mins, 9.46 secs
+Done with inference
+Getting gradient...
+37
+38293 35937 34361 36270 35949 19190 20798 68033 101262 9907 165117 167441 169467 165447 170640 182686 190763 170875 169083 165849 187146 184317 165620 187406 191221 195247 168131 193637 163621 166467 167146 164647 166236 181790 0 200000 200000 
+Pred*dist = -0.154086
+Real*dist = -0.0226203
+Lambda = 1600
+Maximum estimated improvement: 0.198538
+Weights:	New		Average
+0:		0.0410663		0.0422039
+1:		0.0739173		0.0722404
+2:		0.0354442		0.0344137
+3:		0.0432247		0.0390707
+4:		0.0399147		0.0479832
+5:		-0.1012		-0.106288
+6:		-0.189447		-0.232679
+7:		0.313695		0.317804
+8:		0.577078		0.590275
+9:		-0.708342		-0.72898
+10:		-0.215948		-0.213799
+11:		-0.364661		-0.303234
+12:		0.0285058		-0.0217624
+13:		-0.258751		-0.2486
+14:		0.211711		0.135598
+15:		-0.113695		-0.0744128
+16:		1.29264		1.18942
+17:		-0.199725		-0.204934
+18:		-0.508487		-0.44054
+19:		-0.462156		-0.410129
+20:		0.886794		0.795218
+21:		0.0320158		0.0142201
+22:		-0.71561		-0.646891
+23:		0.618048		0.563821
+24:		1.00262		0.921724
+25:		1.69857		1.54474
+26:		-0.834683		-0.732887
+27:		0.858306		0.765275
+28:		-0.200288		-0.222107
+29:		-0.185591		-0.206087
+30:		-0.316284		-0.296427
+31:		-0.228565		-0.237817
+32:		-0.307141		-0.296628
+33:		-0.190776		-0.156076
+34:		0		0
+35:		0		0
+36:		0		0
+
+Iteration 30 : 
+
+Elapsed time: 4376.64s (1h 12m 56s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 8.78 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 10.15 secs
+Time taken for SampleSat = 2 mins, 6.36 secs
+Done with inference
+Getting gradient...
+37
+38676 35888 33731 37634 34696 19375 20122 67798 102272 9808 164694 167518 170035 164076 171428 182371 190939 170770 169672 164557 187762 184098 165136 187503 191303 195113 169364 193853 163203 166545 167797 163352 167358 181553 0 200000 200000 
+Pred*dist = -0.174645
+Real*dist = 0.128079
+Lambda = 6400
+Backtracking!
+
+Iteration 30 : 
+
+Elapsed time: 4506.82s (1h 15m 6s)
+Running inference ...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 2 mins, 10.61 secs, num. preds = 20000, num. clauses = 68000
+Done MC-SAT sampling. 100 samples.
+Final ground predicate number: 20000
+Final ground clause number: 68000
+Time taken for MC-SAT sampling = 2 mins, 11.99 secs
+Time taken for SampleSat = 2 mins, 7.82 secs
+Done with inference
+Getting gradient...
+37
+76669 72163 68581 73508 70644 38435 41108 135030 204186 19676 330062 334703 339031 329914 342137 365261 381648 341287 338318 330672 374691 368414 331184 374955 382541 390408 337592 387506 327099 332566 334367 328482 333648 363514 0 400000 400000 
+Lambda = 6400
+Maximum estimated improvement: 0.0212345
+Weights:	New		Average
+0:		0.0402194		0.0421377
+1:		0.0737391		0.0722904
+2:		0.0361382		0.0344712
+3:		0.0407508		0.0391267
+4:		0.042281		0.0477932
+5:		-0.101429		-0.106126
+6:		-0.188394		-0.231203
+7:		0.314501		0.317694
+8:		0.575925		0.589797
+9:		-0.707742		-0.728272
+10:		-0.214781		-0.213832
+11:		-0.363823		-0.305254
+12:		0.0266463		-0.0201488
+13:		-0.256026		-0.248847
+14:		0.208775		0.138038
+15:		-0.113002		-0.0756991
+16:		1.29141		1.19282
+17:		-0.199502		-0.204753
+18:		-0.508096		-0.442792
+19:		-0.458597		-0.411744
+20:		0.884954		0.798209
+21:		0.0320541		0.0148146
+22:		-0.713849		-0.649122
+23:		0.617122		0.565598
+24:		1.00193		0.924398
+25:		1.6993		1.5499
+26:		-0.837025		-0.736359
+27:		0.855893		0.768296
+28:		-0.200003		-0.22137
+29:		-0.185794		-0.20541
+30:		-0.316313		-0.29709
+31:		-0.227049		-0.237459
+32:		-0.308673		-0.29703
+33:		-0.189953		-0.157205
+34:		0		0
+35:		0		0
+36:		0		0
+
+Learned Weights : 
+0:0.0402194
+1:0.0737391
+2:0.0361382
+3:0.0407508
+4:0.042281
+5:-0.101429
+6:-0.188394
+7:0.314501
+8:0.575925
+9:-0.707742
+10:-0.214781
+11:-0.363823
+12:0.0266463
+13:-0.256026
+14:0.208775
+15:-0.113002
+16:1.29141
+17:-0.199502
+18:-0.508096
+19:-0.458597
+20:0.884954
+21:0.0320541
+22:-0.713849
+23:0.617122
+24:1.00193
+25:1.6993
+26:-0.837025
+27:0.855893
+28:-0.200003
+29:-0.185794
+30:-0.316313
+31:-0.227049
+32:-0.308673
+33:-0.189953
+34:0
+35:0
+36:0
+
+
+Done learning discriminative weights. 
+Time Taken for learning = 1 hrs, 17.3163 mins
+Total time = 1 hrs, 17.5063 mins

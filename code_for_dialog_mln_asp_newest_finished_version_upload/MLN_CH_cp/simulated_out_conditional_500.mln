@@ -1,0 +1,150 @@
+//predicate declarations
+Stars(person,starOptions!)
+User(person)
+Pricerange(person,priceRangeOptions!)
+Kind(person,kindOptions!)
+
+// 0.152011  Kind(p,Guesthouse)
+0.152011  Kind(a1,Guesthouse)
+
+// 0.106606  Kind(p,Hotel)
+0.106606  Kind(a1,Hotel)
+
+// -0.306542  Kind(p,KindDontcare)
+-0.306542  Kind(a1,KindDontcare)
+
+// -0.121544  Stars(p,C@starOptions@0)
+-0.121544  Stars(a1,0)
+
+// -0.132846  Stars(p,C@starOptions@2)
+-0.132846  Stars(a1,2)
+
+// 0.0280178  Stars(p,C@starOptions@3)
+0.0280178  Stars(a1,3)
+
+// 0.316505  Stars(p,C@starOptions@4)
+0.316505  Stars(a1,4)
+
+// -0.353976  Stars(p,C@starOptions@5)
+-0.353976  Stars(a1,5)
+
+// -0.130553  Pricerange(p,Cheap)
+-0.130553  Pricerange(a1,Cheap)
+
+// 0.338912  Pricerange(p,Moderate)
+0.338912  Pricerange(a1,Moderate)
+
+// 0.339939  Pricerange(p,Expensive)
+0.339939  Pricerange(a1,Expensive)
+
+// -1.44198  Pricerange(p,PriceDontcare)
+-1.44198  Pricerange(a1,PriceDontcare)
+
+// -0.205415  Kind(p,Guesthouse) => Pricerange(p,Cheap)
+-0.205415  !Kind(a1,Guesthouse) v Pricerange(a1,Cheap)
+
+// -0.168213  Kind(p,Hotel) => Pricerange(p,Cheap)
+-0.168213  !Kind(a1,Hotel) v Pricerange(a1,Cheap)
+
+// 0.276721  Kind(p,KindDontcare) => Pricerange(p,Cheap)
+0.276721  !Kind(a1,KindDontcare) v Pricerange(a1,Cheap)
+
+// 0.432233  Kind(p,Guesthouse) => Pricerange(p,Moderate)
+0.432233  !Kind(a1,Guesthouse) v Pricerange(a1,Moderate)
+
+// -0.104783  Kind(p,Hotel) => Pricerange(p,Moderate)
+-0.104783  !Kind(a1,Hotel) v Pricerange(a1,Moderate)
+
+// 0.0424967  Kind(p,KindDontcare) => Pricerange(p,Moderate)
+0.0424967  !Kind(a1,KindDontcare) v Pricerange(a1,Moderate)
+
+// -0.396268  Kind(p,Guesthouse) => Pricerange(p,Expensive)
+-0.396268  !Kind(a1,Guesthouse) v Pricerange(a1,Expensive)
+
+// 0.434517  Kind(p,Hotel) => Pricerange(p,Expensive)
+0.434517  !Kind(a1,Hotel) v Pricerange(a1,Expensive)
+
+// 1.04996  Kind(p,KindDontcare) => Pricerange(p,Expensive)
+1.04996  !Kind(a1,KindDontcare) v Pricerange(a1,Expensive)
+
+// -0.246504  Kind(p,Guesthouse) => Pricerange(p,PriceDontcare)
+-0.246504  !Kind(a1,Guesthouse) v Pricerange(a1,PriceDontcare)
+
+// -0.417506  Kind(p,Hotel) => Pricerange(p,PriceDontcare)
+-0.417506  !Kind(a1,Hotel) v Pricerange(a1,PriceDontcare)
+
+// 0.0126868  Kind(p,KindDontcare) => Pricerange(p,PriceDontcare)
+0.0126868  !Kind(a1,KindDontcare) v Pricerange(a1,PriceDontcare)
+
+// 0.300531  Stars(p,C@starOptions@0) => Pricerange(p,Cheap)
+0.300531  !Stars(a1,0) v Pricerange(a1,Cheap)
+
+// 0.375519  Stars(p,C@starOptions@2) => Pricerange(p,Cheap)
+0.375519  !Stars(a1,2) v Pricerange(a1,Cheap)
+
+// -0.250159  Stars(p,C@starOptions@3) => Pricerange(p,Cheap)
+-0.250159  !Stars(a1,3) v Pricerange(a1,Cheap)
+
+// -0.367854  Stars(p,C@starOptions@4) => Pricerange(p,Cheap)
+-0.367854  !Stars(a1,4) v Pricerange(a1,Cheap)
+
+// 0.285052  Stars(p,C@starOptions@5) => Pricerange(p,Cheap)
+0.285052  !Stars(a1,5) v Pricerange(a1,Cheap)
+
+// 0.0786493  Stars(p,C@starOptions@0) => Pricerange(p,Moderate)
+0.0786493  !Stars(a1,0) v Pricerange(a1,Moderate)
+
+// 0.0817392  Stars(p,C@starOptions@2) => Pricerange(p,Moderate)
+0.0817392  !Stars(a1,2) v Pricerange(a1,Moderate)
+
+// 0.0695317  Stars(p,C@starOptions@3) => Pricerange(p,Moderate)
+0.0695317  !Stars(a1,3) v Pricerange(a1,Moderate)
+
+// 0.0203046  Stars(p,C@starOptions@4) => Pricerange(p,Moderate)
+0.0203046  !Stars(a1,4) v Pricerange(a1,Moderate)
+
+// 0.0556339  Stars(p,C@starOptions@5) => Pricerange(p,Moderate)
+0.0556339  !Stars(a1,5) v Pricerange(a1,Moderate)
+
+// -0.0759565  Stars(p,C@starOptions@0) => Pricerange(p,Expensive)
+-0.0759565  !Stars(a1,0) v Pricerange(a1,Expensive)
+
+// 0.0868988  Stars(p,C@starOptions@2) => Pricerange(p,Expensive)
+0.0868988  !Stars(a1,2) v Pricerange(a1,Expensive)
+
+// 0.332567  Stars(p,C@starOptions@3) => Pricerange(p,Expensive)
+0.332567  !Stars(a1,3) v Pricerange(a1,Expensive)
+
+// -0.204841  Stars(p,C@starOptions@4) => Pricerange(p,Expensive)
+-0.204841  !Stars(a1,4) v Pricerange(a1,Expensive)
+
+// 1.20579  Stars(p,C@starOptions@5) => Pricerange(p,Expensive)
+1.20579  !Stars(a1,5) v Pricerange(a1,Expensive)
+
+// 0.118238  Stars(p,C@starOptions@0) => Pricerange(p,PriceDontcare)
+0.118238  !Stars(a1,0) v Pricerange(a1,PriceDontcare)
+
+// -0.0601177  Stars(p,C@starOptions@2) => Pricerange(p,PriceDontcare)
+-0.0601177  !Stars(a1,2) v Pricerange(a1,PriceDontcare)
+
+// -0.170176  Stars(p,C@starOptions@3) => Pricerange(p,PriceDontcare)
+-0.170176  !Stars(a1,3) v Pricerange(a1,PriceDontcare)
+
+// -0.606942  Stars(p,C@starOptions@4) => Pricerange(p,PriceDontcare)
+-0.606942  !Stars(a1,4) v Pricerange(a1,PriceDontcare)
+
+// 0.133762  Stars(p,C@starOptions@5) => Pricerange(p,PriceDontcare)
+0.133762  !Stars(a1,5) v Pricerange(a1,PriceDontcare)
+
+// 0       User(a1)
+0       User(a1)
+
+// 0       Kind(a1,a2!)
+0       Kind(a1,a2)
+
+// 0       Stars(a1,a2!)
+0       Stars(a1,a2)
+
+// 0       Pricerange(a1,a2!)
+0       Pricerange(a1,a2)
+

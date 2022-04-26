@@ -1,0 +1,221 @@
+----------------- parameters ----------------
+-i = simulated_out_conditional.mln
+-cw = 
+-ow = 
+-queryEvidence = 0
+-m = 0
+-a = 0
+-p = 0
+-ms = 1
+-bp = 0
+-efbp = 0
+-decision = 0
+-simtp = 0
+-outputNetwork = 0
+-counts = 0
+-seed = -1
+-lazy = 0
+-lazyNoApprox = 0
+-memLimit = -1
+-PrintSamplePerIteration = 0
+-SAInterval = 100
+-MaxSeconds = 
+-SATempDownRatio = 0.9
+-SA = 0
+-hybrid = 0
+-propstdev = tmp.sd
+-contSamples = 
+-mwsMaxSteps = 1000000
+-tries = 1
+-targetWt = 0
+-breakHardClauses = 0
+-heuristic = 2
+-tabuLength = 10
+-lazyLowState = 0
+-burnMinSteps = 100
+-burnMaxSteps = 100
+-minSteps = -1
+-maxSteps = 1000
+-maxSeconds = -1
+-subInterval = 2
+-numRuns = 3
+-numSwap = 10
+-lifted = 0
+-useHC = 0
+-useCT = 0
+-convThresh = 0.0001
+-convIterations = 20
+-explicitRep = 0
+-hcCreateType = 0
+-hcCreateNoise = 0
+-lncIter = 0
+-noHC = 
+-numSolutions = 10
+-saRatio = 50
+-saTemperature = 80
+-lateSa = 1
+-numChains = 10
+-delta = 0.05
+-epsilonError = 0.01
+-fracConverged = 0.95
+-walksatType = 1
+-testConvergence = 0
+-samplesPerTest = 100
+-e = simulated_test.db
+-r = simulated_out_marginal.result
+-q = Pricerange,Food
+-f = 
+----------------- end of parameters ----------------
+Reading formulas and evidence predicates...
+simulated_out_conditional.mln19608_tmpalchemy.mln
+Adding clauses to MLN...
+converting to CNF:
+formula 0: Food(a1,Chinese)
+CNF conversion took 0 secs
+formula 1: Food(a1,European)
+CNF conversion took 0 secs
+formula 2: Food(a1,Italian)
+CNF conversion took 0 secs
+formula 3: Food(a1,British)
+CNF conversion took 0 secs
+formula 4: Food(a1,Indian)
+CNF conversion took 0 secs
+formula 5: Food(a1,FoodDontcare)
+CNF conversion took 0 secs
+formula 6: Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 7: Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 8: Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 9: Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 10: !Food(a1,Chinese) v Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 11: !Food(a1,European) v Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 12: !Food(a1,Italian) v Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 13: !Food(a1,British) v Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 14: !Food(a1,Indian) v Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 15: !Food(a1,FoodDontcare) v Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 16: !Food(a1,Chinese) v Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 17: !Food(a1,European) v Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 18: !Food(a1,Italian) v Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 19: !Food(a1,British) v Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 20: !Food(a1,Indian) v Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 21: !Food(a1,FoodDontcare) v Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 22: !Food(a1,Chinese) v Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 23: !Food(a1,European) v Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 24: !Food(a1,Italian) v Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 25: !Food(a1,British) v Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 26: !Food(a1,Indian) v Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 27: !Food(a1,FoodDontcare) v Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 28: !Food(a1,Chinese) v Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 29: !Food(a1,European) v Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 30: !Food(a1,Italian) v Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 31: !Food(a1,British) v Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 32: !Food(a1,Indian) v Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 33: !Food(a1,FoodDontcare) v Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 34: User(a1)
+CNF conversion took 0 secs
+formula 35: Food(a1,a2)
+CNF conversion took 0 secs
+formula 36: Pricerange(a1,a2)
+CNF conversion took 0 secs
+idx 0: 0.0402194 Food(a1,Chinese)
+idx 0: 0.0737391 Food(a1,European)
+idx 0: 0.0361382 Food(a1,Italian)
+idx 0: 0.0407508 Food(a1,British)
+idx 0: 0.042281 Food(a1,Indian)
+idx 0: -0.101429 Food(a1,FoodDontcare)
+idx 0: -0.188394 Pricerange(a1,Cheap)
+idx 0: 0.314501 Pricerange(a1,Moderate)
+idx 0: 0.575925 Pricerange(a1,Expensive)
+idx 0: -0.707742 Pricerange(a1,PriceDontcare)
+idx 0: -0.214781 !Food(a1,Chinese) v Pricerange(a1,Cheap)
+idx 0: -0.363823 !Food(a1,European) v Pricerange(a1,Cheap)
+idx 0: 0.0266463 !Food(a1,Italian) v Pricerange(a1,Cheap)
+idx 0: -0.256026 !Food(a1,British) v Pricerange(a1,Cheap)
+idx 0: 0.208775 !Food(a1,Indian) v Pricerange(a1,Cheap)
+idx 0: -0.113002 !Food(a1,FoodDontcare) v Pricerange(a1,Cheap)
+idx 0: 1.29141 !Food(a1,Chinese) v Pricerange(a1,Moderate)
+idx 0: -0.199502 !Food(a1,European) v Pricerange(a1,Moderate)
+idx 0: -0.508096 !Food(a1,Italian) v Pricerange(a1,Moderate)
+idx 0: -0.458597 !Food(a1,British) v Pricerange(a1,Moderate)
+idx 0: 0.884954 !Food(a1,Indian) v Pricerange(a1,Moderate)
+idx 0: 0.0320541 !Food(a1,FoodDontcare) v Pricerange(a1,Moderate)
+idx 0: -0.713849 !Food(a1,Chinese) v Pricerange(a1,Expensive)
+idx 0: 0.617122 !Food(a1,European) v Pricerange(a1,Expensive)
+idx 0: 1.00193 !Food(a1,Italian) v Pricerange(a1,Expensive)
+idx 0: 1.6993 !Food(a1,British) v Pricerange(a1,Expensive)
+idx 0: -0.837025 !Food(a1,Indian) v Pricerange(a1,Expensive)
+idx 0: 0.855893 !Food(a1,FoodDontcare) v Pricerange(a1,Expensive)
+idx 0: -0.200003 !Food(a1,Chinese) v Pricerange(a1,PriceDontcare)
+idx 0: -0.185794 !Food(a1,European) v Pricerange(a1,PriceDontcare)
+idx 0: -0.316313 !Food(a1,Italian) v Pricerange(a1,PriceDontcare)
+idx 0: -0.227049 !Food(a1,British) v Pricerange(a1,PriceDontcare)
+idx 0: -0.308673 !Food(a1,Indian) v Pricerange(a1,PriceDontcare)
+idx 0: -0.189953 !Food(a1,FoodDontcare) v Pricerange(a1,PriceDontcare)
+idx 0: 0 User(a1)
+idx 0: 0 Food(a1,a2)
+idx 0: 0 Pricerange(a1,a2)
+Pricerange(2000,Cheap)
+Pricerange(2000,Moderate)
+Pricerange(2000,Expensive)
+Pricerange(2000,PriceDontcare)
+Food(2000,Chinese)
+Food(2000,European)
+Food(2000,Italian)
+Food(2000,British)
+Food(2000,Indian)
+Food(2000,FoodDontcare)
+Set hard weight to 23.8317
+creating mrf...
+number of grounded predicates = 10
+number of grounded clauses = 34
+Time taken to construct MRF = 0.01 secs
+[VS] 0.01 secs
+>>> DONE: Initial num. of clauses: 34
+Initializing MC-SAT with MaxWalksat on hard clauses...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 0.91 secs, num. preds = 10, num. clauses = 34
+Done burning. 100 samples.
+Sample (per pred) 100, time elapsed = 1.48 secs, num. preds = 10, num. clauses = 34
+Sample (per pred) 200, time elapsed = 2.87 secs, num. preds = 10, num. clauses = 34
+Sample (per pred) 300, time elapsed = 3.18 secs, num. preds = 10, num. clauses = 34
+Sample (per pred) 400, time elapsed = 4.28 secs, num. preds = 10, num. clauses = 34
+Sample (per pred) 500, time elapsed = 6.24 secs, num. preds = 10, num. clauses = 34
+Sample (per pred) 600, time elapsed = 6.8 secs, num. preds = 10, num. clauses = 34
+Sample (per pred) 700, time elapsed = 8.12 secs, num. preds = 10, num. clauses = 34
+Sample (per pred) 800, time elapsed = 8.39 secs, num. preds = 10, num. clauses = 34
+Sample (per pred) 900, time elapsed = 8.95 secs, num. preds = 10, num. clauses = 34
+Sample (per pred) 1000, time elapsed = 10.33 secs, num. preds = 10, num. clauses = 34
+Done MC-SAT sampling. 1000 samples.
+Final ground predicate number: 10
+Final ground clause number: 34
+Time taken for MC-SAT sampling = 10.33 secs
+Time taken for SampleSat = 10.32 secs
+Time-Results: Init 0 Run 10.33 Total 10.33
+total time taken = 10.34 secs

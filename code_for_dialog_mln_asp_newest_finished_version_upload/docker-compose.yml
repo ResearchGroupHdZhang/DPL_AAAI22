@@ -1,0 +1,11 @@
+version: '3'
+services:
+  cpu:
+    build: ./docker/cpu
+    volumes:
+      - .:/pydial
+  gpu:
+    build: ./docker/gpu
+    runtime: nvidia
+    volumes:
+      - .:/pydial

@@ -1,0 +1,17 @@
+*.pyc
+.idea/
+_tutorialconfigs/
+_tutoriallogs/
+generated_data/
+_plots/
+_output/
+.DS_Store
+ontology/_DS.Store
+ontology/ontologies/_DS.Store
+_benchmarklogs/
+_benchmarkpolicies/
+.ipynb_checkpoints/
+.vscode/
+output*/
+nohup.out
+nohup_out/

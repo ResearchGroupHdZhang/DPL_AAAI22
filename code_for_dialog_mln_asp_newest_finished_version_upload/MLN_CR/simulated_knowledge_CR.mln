@@ -1,0 +1,16 @@
+// Constants
+kindOptions = {Indian,Chinese,Italian,British,European,FoodDontcare}
+priceRangeOptions = {Cheap,Moderate,Expensive,PriceDontcare}
+
+// Class
+User(person)
+
+// Query
+Food(person, foodOptions!)
+Pricerange(person, priceRangeOptions!)
+
+// Rules
+Food(p, +k)
+Pricerange(p, +pr)
+
+Food(p, +k) => Pricerange(p, +pr)

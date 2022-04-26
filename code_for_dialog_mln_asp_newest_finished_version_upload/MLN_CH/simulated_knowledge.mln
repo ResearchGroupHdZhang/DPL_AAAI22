@@ -1,0 +1,20 @@
+// Constants
+kindOptions = {Guesthouse,Hotel,KindDontcare}
+starOptions = {0,2,3,4,5}
+priceRangeOptions = {Cheap,Moderate,Expensive,PriceDontcare}
+
+// Class
+User(person)
+
+// Query
+Kind(person, kindOptions!)
+Stars(person, starOptions!)
+Pricerange(person, priceRangeOptions!)
+
+// Rules
+Kind(p, +k)
+Stars(p, +s)
+Pricerange(p, +pr)
+
+Kind(p, +k) => Pricerange(p, +pr)
+Stars(p, +s) => Pricerange(p, +pr)

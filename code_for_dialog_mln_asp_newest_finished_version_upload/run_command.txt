@@ -1,0 +1,67 @@
+nohup python pydial.py train config/jerry_cam_restaurant/env401-A2C-CH.cfg &
+nohup python pydial.py train config/jerry_cam_restaurant/env401-A2C-CH-MLN.cfg &
+nohup python pydial.py train config/jerry_cam_restaurant/env402-A2C-CH.cfg &
+nohup python pydial.py train config/jerry_cam_restaurant/env402-A2C-CH-MLN.cfg &
+nohup python pydial.py train config/jerry_cam_restaurant/env403-A2C-CH.cfg &
+nohup python pydial.py train config/jerry_cam_restaurant/env403-A2C-CH-MLN.cfg &
+nohup python pydial.py train config/jerry_cam_restaurant/env404-A2C-CH.cfg &
+nohup python pydial.py train config/jerry_cam_restaurant/env404-A2C-CH-MLN.cfg &
+nohup python pydial.py train config/jerry_cam_restaurant/env405-A2C-CH.cfg &
+nohup python pydial.py train config/jerry_cam_restaurant/env405-A2C-CH-MLN.cfg &
+
+ 1940  nohup python pydial.py train config/jerry_cam_restaurant/env195-ACER-CH.cfg &
+ 1941  nohup python pydial.py train config/jerry_cam_restaurant/env195-ACER-CH-MLN.cfg &
+ 1942  nohup python pydial.py train config/jerry_cam_restaurant/env196-ACER-CH.cfg &
+ 1943  nohup python pydial.py train config/jerry_cam_restaurant/env196-ACER-CH-MLN.cfg &
+ 1944  nohup python pydial.py train config/jerry_cam_restaurant/env198-ACER-CH.cfg &
+ 1945  nohup python pydial.py train config/jerry_cam_restaurant/env198-ACER-CH-MLN.cfg &
+ 1946  nohup python pydial.py train config/jerry_cam_restaurant/env199-ACER-CH.cfg &
+ 1947  nohup python pydial.py train config/jerry_cam_restaurant/env199-ACER-CH-MLN.cfg &
+ 1948  nohup python pydial.py train config/jerry_cam_restaurant/env200-ACER-CH.cfg &
+ 1949  nohup python pydial.py train config/jerry_cam_restaurant/env200-ACER-CH-MLN.cfg &
+
+ 1951  nohup python pydial.py train config/jerry_cam_restaurant/env61-bdqn-CR.cfg &
+ 1952  nohup python pydial.py train config/jerry_cam_restaurant/env61-bdqn-CR-MLN.cfg &
+ 1953  nohup python pydial.py train config/jerry_cam_restaurant/env62-bdqn-CR.cfg &
+ 1954  nohup python pydial.py train config/jerry_cam_restaurant/env62-bdqn-CR-MLN.cfg &
+ 1955  nohup python pydial.py train config/jerry_cam_restaurant/env63-bdqn-CR.cfg &
+ 1956  nohup python pydial.py train config/jerry_cam_restaurant/env63-bdqn-CR-MLN.cfg &
+ 1957  nohup python pydial.py train config/jerry_cam_restaurant/env64-bdqn-CR.cfg &
+ 1958  nohup python pydial.py train config/jerry_cam_restaurant/env64-bdqn-CR-MLN.cfg &
+ 1959  nohup python pydial.py train config/jerry_cam_restaurant/env65-bdqn-CR.cfg &
+ 1960  nohup python pydial.py train config/jerry_cam_restaurant/env65-bdqn-CR-MLN.cfg &
+ 
+ 1967  nohup python pydial.py train config/jerry_cam_restaurant/env81-dropout-CR.cfg &
+ 1968  nohup python pydial.py train config/jerry_cam_restaurant/env81-dropout-CR-MLN.cfg &
+ 1969  nohup python pydial.py train config/jerry_cam_restaurant/env83-dropout-CR.cfg &
+ 1970  nohup python pydial.py train config/jerry_cam_restaurant/env83-dropout-CR-MLN.cfg &
+ 1971  nohup python pydial.py train config/jerry_cam_restaurant/env84-dropout-CR.cfg &
+ 1972  nohup python pydial.py train config/jerry_cam_restaurant/env84-dropout-CR-MLN.cfg &
+ 1973  nohup python pydial.py train config/jerry_cam_restaurant/env85-dropout-CR.cfg &
+ 1974  nohup python pydial.py train config/jerry_cam_restaurant/env85-dropout-CR-MLN.cfg &
+ 1975  nohup python pydial.py train config/jerry_cam_restaurant/env86-dropout-CR.cfg &
+ 1976  nohup python pydial.py train config/jerry_cam_restaurant/env86-dropout-CR-MLN.cfg &
+ 2035  nohup python pydial.py train config/jerry_cam_restaurant/env87-dropout-CR.cfg &
+ 2036  nohup python pydial.py train config/jerry_cam_restaurant/env87-dropout-CR-MLN.cfg &
+
+ 1988  nohup python pydial.py train config/jerry_cam_restaurant/env10003-TRACER-CH.cfg &
+ 1989  nohup python pydial.py train config/jerry_cam_restaurant/env10003-TRACER-CH-MLN.cfg &
+ 1990  nohup python pydial.py train config/jerry_cam_restaurant/env10004-TRACER-CH.cfg &
+ 1991  nohup python pydial.py train config/jerry_cam_restaurant/env10004-TRACER-CH-MLN.cfg &
+ 1992  nohup python pydial.py train config/jerry_cam_restaurant/env10005-TRACER-CH.cfg &
+ 1993  nohup python pydial.py train config/jerry_cam_restaurant/env10005-TRACER-CH-MLN.cfg &
+ 1995  nohup python pydial.py train config/jerry_cam_restaurant/env10007-TRACER-CH.cfg &
+ 1996  nohup python pydial.py train config/jerry_cam_restaurant/env10007-TRACER-CH-MLN.cfg &
+ 2001  nohup python pydial.py train config/jerry_cam_restaurant/env10008-TRACER-CH.cfg &
+ 2002  nohup python pydial.py train config/jerry_cam_restaurant/env10008-TRACER-CH-MLN.cfg & 
+
+ 2008  nohup python pydial.py train config/jerry_cam_restaurant/env31-dqn-CR.cfg &
+ 2009  nohup python pydial.py train config/jerry_cam_restaurant/env31-dqn-CR-MLN.cfg &
+ 2010  nohup python pydial.py train config/jerry_cam_restaurant/env32-dqn-CR.cfg &
+ 2011  nohup python pydial.py train config/jerry_cam_restaurant/env32-dqn-CR-MLN.cfg &
+ 2012  nohup python pydial.py train config/jerry_cam_restaurant/env33-dqn-CR.cfg &
+ 2013  nohup python pydial.py train config/jerry_cam_restaurant/env33-dqn-CR-MLN.cfg &
+ 2014  nohup python pydial.py train config/jerry_cam_restaurant/env34-dqn-CR.cfg &
+ 2015  nohup python pydial.py train config/jerry_cam_restaurant/env34-dqn-CR-MLN.cfg &
+ 2016  nohup python pydial.py train config/jerry_cam_restaurant/env35-dqn-CR.cfg &
+ 2017  nohup python pydial.py train config/jerry_cam_restaurant/env35-dqn-CR-MLN.cfg &

@@ -1,0 +1,10 @@
+Pricerange(2000,Cheap) 0.119038
+Pricerange(2000,Moderate) 0.287021
+Pricerange(2000,Expensive) 0.541996
+Pricerange(2000,PriceDontcare) 0.0520448
+Food(2000,Chinese) 0.167033
+Food(2000,European) 0.215028
+Food(2000,Italian) 0.185031
+Food(2000,British) 0.169033
+Food(2000,Indian) 0.149035
+Food(2000,FoodDontcare) 0.115038

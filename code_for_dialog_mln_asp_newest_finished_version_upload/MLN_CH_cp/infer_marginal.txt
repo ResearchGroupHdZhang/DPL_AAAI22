@@ -1,0 +1,256 @@
+----------------- parameters ----------------
+-i = simulated_out_conditional.mln
+-cw = 
+-ow = 
+-queryEvidence = 0
+-m = 0
+-a = 0
+-p = 0
+-ms = 1
+-bp = 0
+-efbp = 0
+-decision = 0
+-simtp = 0
+-outputNetwork = 0
+-counts = 0
+-seed = -1
+-lazy = 0
+-lazyNoApprox = 0
+-memLimit = -1
+-PrintSamplePerIteration = 0
+-SAInterval = 100
+-MaxSeconds = 
+-SATempDownRatio = 0.9
+-SA = 0
+-hybrid = 0
+-propstdev = tmp.sd
+-contSamples = 
+-mwsMaxSteps = 1000000
+-tries = 1
+-targetWt = 0
+-breakHardClauses = 0
+-heuristic = 2
+-tabuLength = 10
+-lazyLowState = 0
+-burnMinSteps = 100
+-burnMaxSteps = 100
+-minSteps = -1
+-maxSteps = 1000
+-maxSeconds = -1
+-subInterval = 2
+-numRuns = 3
+-numSwap = 10
+-lifted = 0
+-useHC = 0
+-useCT = 0
+-convThresh = 0.0001
+-convIterations = 20
+-explicitRep = 0
+-hcCreateType = 0
+-hcCreateNoise = 0
+-lncIter = 0
+-noHC = 
+-numSolutions = 10
+-saRatio = 50
+-saTemperature = 80
+-lateSa = 1
+-numChains = 10
+-delta = 0.05
+-epsilonError = 0.01
+-fracConverged = 0.95
+-walksatType = 1
+-testConvergence = 0
+-samplesPerTest = 100
+-e = simulated_test.db
+-r = simulated_out_marginal.result
+-q = Kind,Stars,Pricerange
+-f = 
+----------------- end of parameters ----------------
+Reading formulas and evidence predicates...
+simulated_out_conditional.mln34102_tmpalchemy.mln
+Adding clauses to MLN...
+converting to CNF:
+formula 0: Kind(a1,Guesthouse)
+CNF conversion took 0 secs
+formula 1: Kind(a1,Hotel)
+CNF conversion took 0 secs
+formula 2: Kind(a1,KindDontcare)
+CNF conversion took 0 secs
+formula 3: Stars(a1,0)
+CNF conversion took 0 secs
+formula 4: Stars(a1,2)
+CNF conversion took 0 secs
+formula 5: Stars(a1,3)
+CNF conversion took 0 secs
+formula 6: Stars(a1,4)
+CNF conversion took 0 secs
+formula 7: Stars(a1,5)
+CNF conversion took 0 secs
+formula 8: Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 9: Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 10: Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 11: Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 12: !Kind(a1,Guesthouse) v Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 13: !Kind(a1,Hotel) v Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 14: !Kind(a1,KindDontcare) v Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 15: !Kind(a1,Guesthouse) v Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 16: !Kind(a1,Hotel) v Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 17: !Kind(a1,KindDontcare) v Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 18: !Kind(a1,Guesthouse) v Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 19: !Kind(a1,Hotel) v Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 20: !Kind(a1,KindDontcare) v Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 21: !Kind(a1,Guesthouse) v Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 22: !Kind(a1,Hotel) v Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 23: !Kind(a1,KindDontcare) v Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 24: !Stars(a1,0) v Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 25: !Stars(a1,2) v Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 26: !Stars(a1,3) v Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 27: !Stars(a1,4) v Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 28: !Stars(a1,5) v Pricerange(a1,Cheap)
+CNF conversion took 0 secs
+formula 29: !Stars(a1,0) v Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 30: !Stars(a1,2) v Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 31: !Stars(a1,3) v Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 32: !Stars(a1,4) v Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 33: !Stars(a1,5) v Pricerange(a1,Moderate)
+CNF conversion took 0 secs
+formula 34: !Stars(a1,0) v Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 35: !Stars(a1,2) v Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 36: !Stars(a1,3) v Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 37: !Stars(a1,4) v Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 38: !Stars(a1,5) v Pricerange(a1,Expensive)
+CNF conversion took 0 secs
+formula 39: !Stars(a1,0) v Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 40: !Stars(a1,2) v Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 41: !Stars(a1,3) v Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 42: !Stars(a1,4) v Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 43: !Stars(a1,5) v Pricerange(a1,PriceDontcare)
+CNF conversion took 0 secs
+formula 44: User(a1)
+CNF conversion took 0 secs
+formula 45: Kind(a1,a2)
+CNF conversion took 0 secs
+formula 46: Stars(a1,a2)
+CNF conversion took 0 secs
+formula 47: Pricerange(a1,a2)
+CNF conversion took 0 secs
+idx 0: 0.114943 Kind(a1,Guesthouse)
+idx 0: 0.128353 Kind(a1,Hotel)
+idx 0: -0.336088 Kind(a1,KindDontcare)
+idx 0: -0.102623 Stars(a1,0)
+idx 0: -0.118966 Stars(a1,2)
+idx 0: 0.0766016 Stars(a1,3)
+idx 0: 0.339545 Stars(a1,4)
+idx 0: -0.304249 Stars(a1,5)
+idx 0: -0.254492 Pricerange(a1,Cheap)
+idx 0: 0.322056 Pricerange(a1,Moderate)
+idx 0: 0.396219 Pricerange(a1,Expensive)
+idx 0: -0.77816 Pricerange(a1,PriceDontcare)
+idx 0: -0.24464 Pricerange(a1,Cheap) v !Kind(a1,Guesthouse)
+idx 0: -0.103946 Pricerange(a1,Cheap) v !Kind(a1,Hotel)
+idx 0: 0.0950987 Pricerange(a1,Cheap) v !Kind(a1,KindDontcare)
+idx 0: 0.398566 Pricerange(a1,Moderate) v !Kind(a1,Guesthouse)
+idx 0: -0.150401 Pricerange(a1,Moderate) v !Kind(a1,Hotel)
+idx 0: 0.114493 Pricerange(a1,Moderate) v !Kind(a1,KindDontcare)
+idx 0: -0.301538 Pricerange(a1,Expensive) v !Kind(a1,Guesthouse)
+idx 0: 0.200753 Pricerange(a1,Expensive) v !Kind(a1,Hotel)
+idx 0: 1.43436 Pricerange(a1,Expensive) v !Kind(a1,KindDontcare)
+idx 0: -0.20414 Pricerange(a1,PriceDontcare) v !Kind(a1,Guesthouse)
+idx 0: -0.358904 Pricerange(a1,PriceDontcare) v !Kind(a1,Hotel)
+idx 0: 0.0636005 Pricerange(a1,PriceDontcare) v !Kind(a1,KindDontcare)
+idx 0: 0.124197 !Stars(a1,0) v Pricerange(a1,Cheap)
+idx 0: 0.0660525 !Stars(a1,2) v Pricerange(a1,Cheap)
+idx 0: -0.189022 !Stars(a1,3) v Pricerange(a1,Cheap)
+idx 0: -0.439246 !Stars(a1,4) v Pricerange(a1,Cheap)
+idx 0: 0.467298 !Stars(a1,5) v Pricerange(a1,Cheap)
+idx 0: 0.342221 !Stars(a1,0) v Pricerange(a1,Moderate)
+idx 0: 0.281495 !Stars(a1,2) v Pricerange(a1,Moderate)
+idx 0: -0.157985 !Stars(a1,3) v Pricerange(a1,Moderate)
+idx 0: 0.039321 !Stars(a1,4) v Pricerange(a1,Moderate)
+idx 0: -0.15655 !Stars(a1,5) v Pricerange(a1,Moderate)
+idx 0: -0.0464799 !Stars(a1,0) v Pricerange(a1,Expensive)
+idx 0: 0.398559 !Stars(a1,2) v Pricerange(a1,Expensive)
+idx 0: 0.271717 !Stars(a1,3) v Pricerange(a1,Expensive)
+idx 0: -0.283733 !Stars(a1,4) v Pricerange(a1,Expensive)
+idx 0: 1.15796 !Stars(a1,5) v Pricerange(a1,Expensive)
+idx 0: -0.0132395 !Stars(a1,0) v Pricerange(a1,PriceDontcare)
+idx 0: -0.151901 !Stars(a1,2) v Pricerange(a1,PriceDontcare)
+idx 0: -0.160394 !Stars(a1,3) v Pricerange(a1,PriceDontcare)
+idx 0: -0.557271 !Stars(a1,4) v Pricerange(a1,PriceDontcare)
+idx 0: 0.112443 !Stars(a1,5) v Pricerange(a1,PriceDontcare)
+idx 0: 0 User(a1)
+idx 0: 0 Kind(a1,a2)
+idx 0: 0 Stars(a1,a2)
+idx 0: 0 Pricerange(a1,a2)
+Kind(2000,Guesthouse)
+Kind(2000,Hotel)
+Kind(2000,KindDontcare)
+Stars(2000,0)
+Stars(2000,2)
+Stars(2000,3)
+Stars(2000,4)
+Stars(2000,5)
+Pricerange(2000,Cheap)
+Pricerange(2000,Moderate)
+Pricerange(2000,Expensive)
+Pricerange(2000,PriceDontcare)
+Set hard weight to 22.3598
+creating mrf...
+number of grounded predicates = 12
+number of grounded clauses = 44
+Time taken to construct MRF = 0 secs
+[VS] 0 secs
+>>> DONE: Initial num. of clauses: 44
+Initializing MC-SAT with MaxWalksat on hard clauses...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 4.46 secs, num. preds = 12, num. clauses = 44
+Done burning. 100 samples.
+Sample (per pred) 100, time elapsed = 8.24 secs, num. preds = 12, num. clauses = 44
+Sample (per pred) 200, time elapsed = 10.54 secs, num. preds = 12, num. clauses = 44
+Sample (per pred) 300, time elapsed = 14.17 secs, num. preds = 12, num. clauses = 44
+Sample (per pred) 400, time elapsed = 15.2 secs, num. preds = 12, num. clauses = 44
+Sample (per pred) 500, time elapsed = 18.39 secs, num. preds = 12, num. clauses = 44
+Sample (per pred) 600, time elapsed = 19.52 secs, num. preds = 12, num. clauses = 44
+Sample (per pred) 700, time elapsed = 21.91 secs, num. preds = 12, num. clauses = 44
+Sample (per pred) 800, time elapsed = 24.29 secs, num. preds = 12, num. clauses = 44
+Sample (per pred) 900, time elapsed = 26.42 secs, num. preds = 12, num. clauses = 44
+Sample (per pred) 1000, time elapsed = 28.52 secs, num. preds = 12, num. clauses = 44
+Done MC-SAT sampling. 1000 samples.
+Final ground predicate number: 12
+Final ground clause number: 44
+Time taken for MC-SAT sampling = 28.52 secs
+Time taken for SampleSat = 28.51 secs
+Time-Results: Init 0 Run 28.52 Total 28.52
+total time taken = 28.52 secs

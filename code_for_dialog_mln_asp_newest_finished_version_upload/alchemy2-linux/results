@@ -1,0 +1,12 @@
+Smokes(Elaine) 0.638986
+Smokes(George) 0.753975
+Cancer(Jerry) 0.825967
+Cancer(Elaine) 0.70398
+Cancer(George) 0.722978
+Friends(Jerry,Jerry) 0.650985
+Friends(Jerry,George) 0.817968
+Friends(Elaine,Jerry) 0.334017
+Friends(Elaine,Elaine) 0.683982
+Friends(George,Jerry) 0.151035
+Friends(George,Elaine) 0.282022
+Friends(George,George) 0.632987

@@ -1,0 +1,116 @@
+//predicate declarations
+Food(person,foodOptions!)
+User(person)
+Pricerange(person,priceRangeOptions!)
+
+// 0.0402194  Food(p,Chinese)
+0.0402194  Food(a1,Chinese)
+
+// 0.0737391  Food(p,European)
+0.0737391  Food(a1,European)
+
+// 0.0361382  Food(p,Italian)
+0.0361382  Food(a1,Italian)
+
+// 0.0407508  Food(p,British)
+0.0407508  Food(a1,British)
+
+// 0.042281  Food(p,Indian)
+0.042281  Food(a1,Indian)
+
+// -0.101429  Food(p,FoodDontcare)
+-0.101429  Food(a1,FoodDontcare)
+
+// -0.188394  Pricerange(p,Cheap)
+-0.188394  Pricerange(a1,Cheap)
+
+// 0.314501  Pricerange(p,Moderate)
+0.314501  Pricerange(a1,Moderate)
+
+// 0.575925  Pricerange(p,Expensive)
+0.575925  Pricerange(a1,Expensive)
+
+// -0.707742  Pricerange(p,PriceDontcare)
+-0.707742  Pricerange(a1,PriceDontcare)
+
+// -0.214781  Food(p,Chinese) => Pricerange(p,Cheap)
+-0.214781  !Food(a1,Chinese) v Pricerange(a1,Cheap)
+
+// -0.363823  Food(p,European) => Pricerange(p,Cheap)
+-0.363823  !Food(a1,European) v Pricerange(a1,Cheap)
+
+// 0.0266463  Food(p,Italian) => Pricerange(p,Cheap)
+0.0266463  !Food(a1,Italian) v Pricerange(a1,Cheap)
+
+// -0.256026  Food(p,British) => Pricerange(p,Cheap)
+-0.256026  !Food(a1,British) v Pricerange(a1,Cheap)
+
+// 0.208775  Food(p,Indian) => Pricerange(p,Cheap)
+0.208775  !Food(a1,Indian) v Pricerange(a1,Cheap)
+
+// -0.113002  Food(p,FoodDontcare) => Pricerange(p,Cheap)
+-0.113002  !Food(a1,FoodDontcare) v Pricerange(a1,Cheap)
+
+// 1.29141  Food(p,Chinese) => Pricerange(p,Moderate)
+1.29141  !Food(a1,Chinese) v Pricerange(a1,Moderate)
+
+// -0.199502  Food(p,European) => Pricerange(p,Moderate)
+-0.199502  !Food(a1,European) v Pricerange(a1,Moderate)
+
+// -0.508096  Food(p,Italian) => Pricerange(p,Moderate)
+-0.508096  !Food(a1,Italian) v Pricerange(a1,Moderate)
+
+// -0.458597  Food(p,British) => Pricerange(p,Moderate)
+-0.458597  !Food(a1,British) v Pricerange(a1,Moderate)
+
+// 0.884954  Food(p,Indian) => Pricerange(p,Moderate)
+0.884954  !Food(a1,Indian) v Pricerange(a1,Moderate)
+
+// 0.0320541  Food(p,FoodDontcare) => Pricerange(p,Moderate)
+0.0320541  !Food(a1,FoodDontcare) v Pricerange(a1,Moderate)
+
+// -0.713849  Food(p,Chinese) => Pricerange(p,Expensive)
+-0.713849  !Food(a1,Chinese) v Pricerange(a1,Expensive)
+
+// 0.617122  Food(p,European) => Pricerange(p,Expensive)
+0.617122  !Food(a1,European) v Pricerange(a1,Expensive)
+
+// 1.00193  Food(p,Italian) => Pricerange(p,Expensive)
+1.00193  !Food(a1,Italian) v Pricerange(a1,Expensive)
+
+// 1.6993  Food(p,British) => Pricerange(p,Expensive)
+1.6993  !Food(a1,British) v Pricerange(a1,Expensive)
+
+// -0.837025  Food(p,Indian) => Pricerange(p,Expensive)
+-0.837025  !Food(a1,Indian) v Pricerange(a1,Expensive)
+
+// 0.855893  Food(p,FoodDontcare) => Pricerange(p,Expensive)
+0.855893  !Food(a1,FoodDontcare) v Pricerange(a1,Expensive)
+
+// -0.200003  Food(p,Chinese) => Pricerange(p,PriceDontcare)
+-0.200003  !Food(a1,Chinese) v Pricerange(a1,PriceDontcare)
+
+// -0.185794  Food(p,European) => Pricerange(p,PriceDontcare)
+-0.185794  !Food(a1,European) v Pricerange(a1,PriceDontcare)
+
+// -0.316313  Food(p,Italian) => Pricerange(p,PriceDontcare)
+-0.316313  !Food(a1,Italian) v Pricerange(a1,PriceDontcare)
+
+// -0.227049  Food(p,British) => Pricerange(p,PriceDontcare)
+-0.227049  !Food(a1,British) v Pricerange(a1,PriceDontcare)
+
+// -0.308673  Food(p,Indian) => Pricerange(p,PriceDontcare)
+-0.308673  !Food(a1,Indian) v Pricerange(a1,PriceDontcare)
+
+// -0.189953  Food(p,FoodDontcare) => Pricerange(p,PriceDontcare)
+-0.189953  !Food(a1,FoodDontcare) v Pricerange(a1,PriceDontcare)
+
+// 0       User(a1)
+0       User(a1)
+
+// 0       Food(a1,a2!)
+0       Food(a1,a2)
+
+// 0       Pricerange(a1,a2!)
+0       Pricerange(a1,a2)
+

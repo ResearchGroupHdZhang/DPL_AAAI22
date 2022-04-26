@@ -1,0 +1,130 @@
+{
+   "discourseAct":[
+      "ack",
+      "hello",
+      "none",
+      "repeat",
+      "silence",
+      "thankyou"
+   ],
+   "informable":{
+      "kind":[
+         "guesthouse",
+         "hotel"
+      ],
+      "name":[
+         "a and b guest house",
+         "acorn guest house",
+         "alexander bed and breakfast",
+         "allenbell",
+         "alpha-milton guest house",
+         "arbury lodge guesthouse",
+         "archway house",
+         "ashley hotel",
+         "autumn house",
+         "avalon",
+         "aylesbray lodge guest house",
+         "bridge guest house",
+         "carolina bed and breakfast",
+         "city centre north b and b",
+         "cityroomz",
+         "el shaddai",
+         "express by holiday inn cambridge",
+         "finches bed and breakfast",
+         "gonville hotel",
+         "hamilton lodge",
+         "hobsons house",
+         "home from home",
+         "huntingdon marriott hotel",
+         "kirkwood house",
+         "leverton house",
+         "limehouse",
+         "lovell lodge",
+         "rosa's bed and breakfast",
+         "the cambridge belfry",
+         "the lensfield hotel",
+         "university arms hotel",
+         "warkworth house",
+         "worth house",
+         "hotel100", "hotel102", "hotel103", "hotel105", "hotel106", "hotel107", "hotel109", "hotel110", "hotel112",
+        "hotel113", "hotel115", "hotel117", "hotel119", "hotel120", "hotel122", "hotel124", "hotel127", "hotel131",
+        "hotel132", "hotel133", "hotel134", "hotel137", "hotel139", "hotel148", "hotel149", "hotel151", "hotel152",
+        "hotel155", "hotel156", "hotel159", "hotel160", "hotel163", "hotel164", "hotel165", "hotel167", "hotel168",
+        "hotel169", "hotel170", "hotel172", "hotel173", "hotel174", "hotel177", "hotel178", "hotel180", "hotel181",
+        "hotel183", "hotel184", "hotel185", "hotel188", "hotel189", "hotel192", "hotel193", "hotel197", "hotel198",
+        "hotel200", "hotel206", "hotel207", "hotel208", "hotel209", "hotel210", "hotel212", "hotel213", "hotel217",
+        "hotel218", "hotel225", "hotel226", "hotel230", "hotel233", "hotel234", "hotel235", "hotel236", "hotel237",
+        "hotel238", "hotel240", "hotel242", "hotel245", "hotel246", "hotel248", "hotel33", "hotel34", "hotel44",
+        "hotel45", "hotel50", "hotel51", "hotel52", "hotel53", "hotel54", "hotel55", "hotel56", "hotel59", "hotel62",
+        "hotel64", "hotel66", "hotel68", "hotel69", "hotel72", "hotel75", "hotel78", "hotel79", "hotel81", "hotel82",
+        "hotel86", "hotel90", "hotel91", "hotel92", "hotel96", "hotel98", "guesthouse101", "guesthouse104", "guesthouse108",
+        "guesthouse111", "guesthouse114", "guesthouse116", "guesthouse118", "guesthouse121", "guesthouse123", "guesthouse125",
+        "guesthouse126", "guesthouse128", "guesthouse129", "guesthouse130", "guesthouse135", "guesthouse136", "guesthouse138",
+        "guesthouse140", "guesthouse141", "guesthouse142", "guesthouse143", "guesthouse144", "guesthouse145", "guesthouse146",
+        "guesthouse147", "guesthouse150", "guesthouse153", "guesthouse154", "guesthouse157", "guesthouse158", "guesthouse161",
+        "guesthouse162", "guesthouse166", "guesthouse171", "guesthouse175", "guesthouse176", "guesthouse179", "guesthouse182",
+        "guesthouse186", "guesthouse187", "guesthouse190", "guesthouse191", "guesthouse194", "guesthouse195", "guesthouse196",
+        "guesthouse199", "guesthouse201", "guesthouse202", "guesthouse203", "guesthouse204", "guesthouse205", "guesthouse211",
+        "guesthouse214", "guesthouse215", "guesthouse216", "guesthouse219", "guesthouse220", "guesthouse221", "guesthouse222",
+        "guesthouse223", "guesthouse224", "guesthouse227", "guesthouse228", "guesthouse229", "guesthouse231", "guesthouse232",
+        "guesthouse239", "guesthouse241", "guesthouse243", "guesthouse244", "guesthouse247", "guesthouse35", "guesthouse36",
+        "guesthouse37", "guesthouse38", "guesthouse39", "guesthouse40", "guesthouse41", "guesthouse42", "guesthouse43",
+        "guesthouse46", "guesthouse47", "guesthouse48", "guesthouse49", "guesthouse57", "guesthouse58", "guesthouse60",
+        "guesthouse61", "guesthouse63", "guesthouse65", "guesthouse67", "guesthouse70", "guesthouse71", "guesthouse73",
+        "guesthouse74", "guesthouse76", "guesthouse77", "guesthouse80", "guesthouse83", "guesthouse84", "guesthouse85",
+        "guesthouse87", "guesthouse88", "guesthouse89", "guesthouse93", "guesthouse94", "guesthouse95", "guesthouse97",
+        "guesthouse99"
+      ],
+      "area":[
+            "centre", 
+            "north", 
+            "west", 
+            "south", 
+            "east"
+      ],
+      "hasparking":[
+         "0",
+         "1"
+      ],
+      "pricerange":[
+         "moderate",
+         "cheap",
+         "expensive"
+      ],
+      "stars":[
+         "4",
+         "3",
+         "2",
+         "0"
+      ]   
+    },
+   "requestable":[
+      "name",
+      "pricerange",
+      "kind",
+      "area",
+      "phone",
+      "price",
+      "addr",
+      "postcode",
+      "stars",
+      "hasinternet",
+      "hasparking"
+   ],
+   "system_requestable":[
+      "pricerange",
+      "kind",
+      "area",
+      "stars",
+      "hasparking"
+   ],
+   "type":"placetostay",
+   "method":[
+      "none",
+      "byconstraints",
+      "byname",
+      "finished",
+      "byalternatives",
+      "restart"
+   ]
+}

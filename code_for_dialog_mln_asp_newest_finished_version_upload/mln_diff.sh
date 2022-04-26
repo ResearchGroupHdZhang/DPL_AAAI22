@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+nohup python pydial.py train config/mln_config/env1-A2C-CH-ASP-100_1.cfg &
+nohup python pydial.py train config/mln_config/env1-A2C-CH-ASP-100_2.cfg &
+nohup python pydial.py train config/mln_config/env1-A2C-CH-ASP-100_3.cfg &
+nohup python pydial.py train config/mln_config/env1-A2C-CH-ASP-500_1.cfg &
+nohup python pydial.py train config/mln_config/env1-A2C-CH-ASP-500_2.cfg &
+nohup python pydial.py train config/mln_config/env1-A2C-CH-ASP-500_3.cfg &
+nohup python pydial.py train config/mln_config/env1-A2C-CH-ASP.cfg &
+nohup python pydial.py train config/mln_config/env2-A2C-CH-ASP-100_1.cfg &
+nohup python pydial.py train config/mln_config/env2-A2C-CH-ASP-100_2.cfg &
+nohup python pydial.py train config/mln_config/env2-A2C-CH-ASP-100_3.cfg &
+nohup python pydial.py train config/mln_config/env2-A2C-CH-ASP-500_1.cfg &
+nohup python pydial.py train config/mln_config/env2-A2C-CH-ASP-500_2.cfg &
+nohup python pydial.py train config/mln_config/env2-A2C-CH-ASP-500_3.cfg &
+nohup python pydial.py train config/mln_config/env2-A2C-CH-ASP.cfg &
+nohup python pydial.py train config/mln_config/env3-A2C-CH-ASP-100_1.cfg &
+nohup python pydial.py train config/mln_config/env3-A2C-CH-ASP-100_2.cfg &
+nohup python pydial.py train config/mln_config/env3-A2C-CH-ASP-100_3.cfg &
+nohup python pydial.py train config/mln_config/env3-A2C-CH-ASP-500_1.cfg &
+nohup python pydial.py train config/mln_config/env3-A2C-CH-ASP-500_2.cfg &
+nohup python pydial.py train config/mln_config/env3-A2C-CH-ASP-500_3.cfg &
+nohup python pydial.py train config/mln_config/env3-A2C-CH-ASP.cfg &
+nohup python pydial.py train config/mln_config/env4-A2C-CH-ASP-100_1.cfg &
+nohup python pydial.py train config/mln_config/env4-A2C-CH-ASP-100_2.cfg &
+nohup python pydial.py train config/mln_config/env4-A2C-CH-ASP-100_3.cfg &
+nohup python pydial.py train config/mln_config/env4-A2C-CH-ASP-500_1.cfg &
+nohup python pydial.py train config/mln_config/env4-A2C-CH-ASP-500_2.cfg &
+nohup python pydial.py train config/mln_config/env4-A2C-CH-ASP-500_3.cfg &
+nohup python pydial.py train config/mln_config/env4-A2C-CH-ASP.cfg &
+nohup python pydial.py train config/mln_config/env5-A2C-CH-ASP-100_1.cfg &
+nohup python pydial.py train config/mln_config/env5-A2C-CH-ASP-100_2.cfg &
+nohup python pydial.py train config/mln_config/env5-A2C-CH-ASP-100_3.cfg &
+nohup python pydial.py train config/mln_config/env5-A2C-CH-ASP-500_1.cfg &
+nohup python pydial.py train config/mln_config/env5-A2C-CH-ASP-500_2.cfg &
+nohup python pydial.py train config/mln_config/env5-A2C-CH-ASP-500_3.cfg &
+nohup python pydial.py train config/mln_config/env5-A2C-CH-ASP.cfg &

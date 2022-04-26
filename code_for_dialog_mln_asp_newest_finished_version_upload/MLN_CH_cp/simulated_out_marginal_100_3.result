@@ -1,0 +1,12 @@
+Kind(2000,Guesthouse) 0.467003
+Kind(2000,Hotel) 0.450005
+Kind(2000,KindDontcare) 0.0830417
+Stars(2000,0) 0.112039
+Stars(2000,2) 0.0960404
+Stars(2000,3) 0.192031
+Stars(2000,4) 0.542996
+Stars(2000,5) 0.0570443
+Pricerange(2000,Cheap) 0.127037
+Pricerange(2000,Moderate) 0.423008
+Pricerange(2000,Expensive) 0.365013
+Pricerange(2000,PriceDontcare) 0.0850415
